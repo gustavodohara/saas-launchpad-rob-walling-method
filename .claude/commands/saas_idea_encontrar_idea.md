@@ -15,22 +15,39 @@ Si el bloque anterior trae algo, úsalo como punto de partida (no vuelvas a preg
 
 ## Memoria persistente y registro de ideas — LEE ESTO ANTES DE PREGUNTAR NADA
 
-Toda la persistencia de la fase de idea vive en **`data/1-idea_phase/`** (en la raíz del proyecto), con **dos tipos de archivo**:
+Toda la persistencia de la fase de idea vive bajo **`data/`** (en la raíz del proyecto). La estructura es **una carpeta por idea**, y dentro de cada idea las carpetas de fase:
 
-- **`data/1-idea_phase/perfil-fundador.md`** → el **perfil del fundador** (lo que respondió en sesiones anteriores: ventajas, red, herramientas, ambición). Sirve para **no volver a preguntar lo mismo**.
-- **`data/1-idea_phase/idea-NNN-slug.md`** → las **ideas procesadas** (un archivo Markdown por idea), con su problema, para quién, evidencia, banderas y veredicto. Acá van todas las ideas que pasan por el proceso, sea que avancen o se archiven. (Las fases posteriores agregan en esta misma carpeta `prevalidacion-<slug>.md`, `validacion-<slug>.md` y `validacion-campo-<slug>.md`.)
+```
+data/
+├── perfil-fundador.md                  ← perfil del fundador (COMPARTIDO entre todas las ideas)
+└── idea-NNN-<slug>/                     ← una carpeta por idea (NNN correlativo: 001, 002, …)
+    ├── 1-idea_phase/
+    │   ├── idea.md                      ← ficha de la idea (problema, para quién, evidencia, banderas, veredicto)
+    │   ├── prevalidacion.md             ← la agrega /saas_idea_prevalidar_2h
+    │   ├── validacion.md                ← la agrega /saas_idea_validar_2_20_200
+    │   └── validacion-campo.md          ← la agrega /saas_idea_validar_20h
+    ├── 2-build_phase/
+    └── 3-launch_phase/
+```
+
+**Cómo ubicar o crear la carpeta de una idea** (a partir de su **slug** kebab-case de 3–5 palabras):
+- Buscá una carpeta existente que matchee `data/idea-*-<slug>/`. Si existe, **usala** (no crees otra).
+- Si NO existe, asigná el **siguiente número correlativo**: mirá las carpetas `data/idea-NNN-*/`, tomá el NNN más alto y sumale 1 (la primera idea es `001`). Creá `data/idea-NNN-<slug>/` con sus tres subcarpetas de fase (`1-idea_phase/`, `2-build_phase/`, `3-launch_phase/`).
+
+El **perfil del fundador** NO pertenece a ninguna idea: vive siempre en `data/perfil-fundador.md`.
 
 Al iniciar el comando, SIEMPRE:
 
-1. **Lee `data/1-idea_phase/perfil-fundador.md`**. Si la carpeta o el archivo no existen, créalos con la estructura del archivo de perfil y arranca la Fase 1 desde cero.
-2. **Lee los archivos de `data/1-idea_phase/`** (si existen) para saber qué ideas ya se procesaron y no repetirlas; podés retomar una idea archivada si aparece un ángulo nuevo.
+1. **Lee `data/perfil-fundador.md`**. Si `data/` o el archivo no existen, créalos con la estructura del archivo de perfil y arranca la Fase 1 desde cero.
+2. **Listá las carpetas `data/idea-*/`** (si existen) y leé sus `1-idea_phase/idea.md` para saber qué ideas ya se procesaron y no repetirlas; podés retomar una idea archivada si aparece un ángulo nuevo.
 3. Si **ya hay perfil guardado**, NO repitas las preguntas de la Fase 1. En su lugar:
    - Muestra un **resumen breve** de lo que ya sabés de él ("Esto es lo que tengo de vos: …").
    - Pregunta solo por lo que falta (campos marcados como `(pendiente de preguntar)`) **una a una**.
    - Pregunta si hay **algo nuevo o algo que cambió** ("¿Cambió algo de esto o querés agregar una ventaja/red/herramienta nueva?"). No re-preguntes lo que ya está confirmado.
-4. **A medida que el fundador aporta información nueva** sobre su perfil (en cualquier fase), **actualiza `data/1-idea_phase/perfil-fundador.md`**: agrega lo nuevo en la sección correspondiente, completa los `(pendiente de preguntar)`, refresca la fecha de "Última actualización". Hazlo sin interrumpir el flujo (mencionalo en una línea: "📝 Guardado en el perfil").
-5. **Cuando una idea queda procesada** (refinada, archivada o descartada), **guárdala/actualízala como un archivo en `data/1-idea_phase/`** (`idea-NNN-slug.md`), y deja en `data/1-idea_phase/perfil-fundador.md` solo un puntero corto (número, título, estado y ruta del archivo).
+4. **A medida que el fundador aporta información nueva** sobre su perfil (en cualquier fase), **actualiza `data/perfil-fundador.md`**: agrega lo nuevo en la sección correspondiente, completa los `(pendiente de preguntar)`, refresca la fecha de "Última actualización". Hazlo sin interrumpir el flujo (mencionalo en una línea: "📝 Guardado en el perfil").
+5. **Cuando una idea queda procesada** (refinada, archivada o descartada), **guárdala/actualízala como `data/idea-NNN-<slug>/1-idea_phase/idea.md`** (ubicando o creando la carpeta de la idea según la regla de arriba), y deja en `data/perfil-fundador.md` solo un puntero corto (número, título, estado y ruta de la carpeta).
 6. Trata el perfil como **acumulativo**: nunca borres ventajas previas salvo que el fundador diga explícitamente que ya no aplican.
+7. **Espejá en Google Drive.** Cada vez que guardes o actualices un archivo bajo `data/` (tanto `perfil-fundador.md` como cualquier `data/idea-NNN-<slug>/<fase>/<archivo>.md`), reflejalo también como Google Doc nativo en la carpeta espejo correspondiente de Drive. Seguí el mecanismo de **`CLAUDE.md` → "Espejo en Google Drive de los tableros de `data/`"** (buscar→crear con `import_to_google_doc(content=…)` o actualizar con `update_drive_file(content=…)`, sin duplicar). El espejo va incluido en el mismo "📝 Guardado", no como paso aparte.
 
 ## Filosofía central (no la negocies)
 
@@ -50,7 +67,7 @@ Al iniciar el comando, SIEMPRE:
 
 ## Fase 1 — Mapear tus ventajas (perfil del fundador)
 
-Objetivo: entender desde dónde partís, porque ahí viven las mejores ideas. **Primero consultá la Memoria persistente**: salta toda pregunta cuya respuesta ya esté en `data/1-idea_phase/perfil-fundador.md`. Pregunta **una a una** solo lo que falte (adaptando el orden y saltando lo que ya sepas):
+Objetivo: entender desde dónde partís, porque ahí viven las mejores ideas. **Primero consultá la Memoria persistente**: salta toda pregunta cuya respuesta ya esté en `data/perfil-fundador.md`. Pregunta **una a una** solo lo que falte (adaptando el orden y saltando lo que ya sepas):
 
 - ¿A qué te dedicás hoy (trabajo / negocio actual) y en qué industria?
 - ¿En qué sos genuinamente bueno o tenés conocimiento profundo (skill, expertise, oficio)?
@@ -148,7 +165,7 @@ Corré el comando de validación con este texto:
 
 Genera el texto del `/saas_idea_validar_idea` **ya redactado y listo para copiar** para la(s) idea(s) más prometedora(s), para que el usuario pase directo de descubrir a puntuar contra los 18 factores + anti-patrones.
 
-**Antes de cerrar, persistí cada idea procesada** como un archivo en `data/1-idea_phase/` (`idea-NNN-slug.md`) con: problema, para quién, aproximación(es), ventaja del fundador, evidencia, banderas, veredicto y fecha. Deja en `data/1-idea_phase/perfil-fundador.md` solo un puntero corto a cada idea. Así no se pierden entre sesiones y podés retomarlas.
+**Antes de cerrar, persistí cada idea procesada** como `data/idea-NNN-<slug>/1-idea_phase/idea.md` (ubicando o creando la carpeta de la idea según la regla de la Memoria persistente) con: problema, para quién, aproximación(es), ventaja del fundador, evidencia, banderas, veredicto y fecha. Deja en `data/perfil-fundador.md` solo un puntero corto a cada idea. Así no se pierden entre sesiones y podés retomarlas.
 
 ---
 

@@ -33,17 +33,18 @@ Todo el sentido del 2/20/200 es **reemplazar tus corazonadas por evidencia real*
 
 ## Memoria persistente — LEÉ ESTO ANTES DE NADA
 
-Cada idea en validación de campo tiene su propio tablero en `data/1-idea_phase/validacion-campo-<slug-de-la-idea>.md` (ej: `data/1-idea_phase/validacion-campo-deploys-shopify-sin-visibilidad.md`).
+La persistencia vive en **una carpeta por idea**: `data/idea-NNN-<slug>/`, con subcarpetas de fase. El tablero de validación de campo es `data/idea-NNN-<slug>/1-idea_phase/validacion-campo.md` (ej: `data/idea-001-deploys-shopify-sin-visibilidad/1-idea_phase/validacion-campo.md`).
 
 Al iniciar:
 
-1. Derivá un **slug corto** (kebab-case, 3–5 palabras) de la idea — **el mismo** que usan `prevalidacion-<slug>.md` y `validacion-<slug>.md` — y buscá `data/1-idea_phase/validacion-campo-<slug>.md`.
-2. **Mirá primero el puente de memoria de la Fase 2.** Buscá `data/1-idea_phase/prevalidacion-<slug>.md`:
+1. Derivá un **slug corto** (kebab-case, 3–5 palabras) de la idea y **ubicá la carpeta de la idea**: buscá `data/idea-*-<slug>/`. Si existe, usá su `1-idea_phase/validacion-campo.md`. Si la idea **no tiene carpeta todavía**, creala con el siguiente número correlativo (`data/idea-NNN-<slug>/` con sus tres subcarpetas de fase; NNN = máximo existente + 1, primera idea `001`). Los tableros `prevalidacion.md` y `validacion.md` de las otras fases viven en esa misma carpeta.
+2. **Mirá primero el puente de memoria de la Fase 2.** Buscá `1-idea_phase/prevalidacion.md` en la misma carpeta de idea:
    - Si existe y está **cerrado en 🟢**, ya tenés research heredado valiosísimo (competidores, comprador, canal, dónde busca la gente, comunidades). **Usalo** para no repreguntar y para armar la lista de outreach. Si está en 🟡, recordale al fundador que la pre-validación pedía ajustar antes de gastar 20 horas.
    - Si **no existe**, no bloquees, pero avisá que lo ideal es haber corrido `/saas_idea_prevalidar_2h` primero (la Fase 2 abarata muchísimo esta fase).
-3. Si `validacion-campo-<slug>.md` **ya existe**, leelo entero: mostrá un resumen de qué approach eligió, qué umbral propio fijó, qué resultados ya cargó y qué quedó `⏳ PENDIENTE`, y retomá desde ahí (no repreguntes lo confirmado). Lo primero al retomar es **pedir los resultados de campo** que el usuario fue a conseguir.
+3. Si `validacion-campo.md` **ya existe**, leelo entero: mostrá un resumen de qué approach eligió, qué umbral propio fijó, qué resultados ya cargó y qué quedó `⏳ PENDIENTE`, y retomá desde ahí (no repreguntes lo confirmado). Lo primero al retomar es **pedir los resultados de campo** que el usuario fue a conseguir.
 4. Si **no existe**, créalo con la plantilla del final y arrancá eligiendo approach.
 5. **A medida que llega cada resultado** (un "yes" con su cita, un lote de opt-ins, una conversación), **actualizá el archivo** en la sección correspondiente, refrescá la fecha y avisalo en una línea ("📝 Guardado en el tablero"). La memoria es **acumulativa**: cada conversación, cada yes, cada opt-in se registra **con fecha**.
+6. **Espejá en Google Drive.** Cada vez que actualices `1-idea_phase/validacion-campo.md` (cada "📝 Guardado en el tablero"), reflejalo también como Google Doc nativo en la carpeta espejo `analisis de ideas/idea-NNN-<slug>/1-idea_phase/` de Drive, siguiendo el mecanismo de **`CLAUDE.md` → "Espejo en Google Drive de los tableros de `data/`"** (buscar→crear/actualizar sin duplicar, contenido inline). Incluido en el mismo guardado, no como paso aparte.
 
 ## Reglas de conducción
 
@@ -66,7 +67,7 @@ Tener una audiencia (followers de Twitter, YouTube, un podcast, lectores de un b
 
 El error es tratar de separar a la gente en "honestos" vs "aduladores" antes de hablarles. No se puede y no hace falta: **ni tu amigo más honesto puede predecir si realmente va a usar/pagar algo** (las opiniones sobre el futuro son humo, las diga quien las diga), y **ni el más adulador puede falsear lo que ya hizo en el pasado**. Así que no validás a la *persona* — validás con **preguntas y señales inmunes a la cortesía**:
 
-1. **Neutralizá con el Mom Test (es para esto exactamente).** No pidas opiniones sobre tu idea ("¿te parece útil? ¿lo usarías?") — eso invita a la mentira piadosa. Preguntá por **hechos y comportamiento pasado**: *"¿cómo lo resolviste la última vez? ¿cuánto te costó? ¿cada cuánto te pasa?"*. A esas preguntas la cortesía no las puede contaminar. Si tu red zafa con generalidades ("uy sí, es un problemón") pero no tiene **ningún caso concreto** del pasado, ya tenés tu respuesta: era amabilidad.
+1. **Neutralizá con el Mom Test (es para esto exactamente — ver la sección "EL MOM TEST" más abajo).** No pidas opiniones sobre tu idea ("¿te parece útil? ¿lo usarías?") — eso invita a la mentira piadosa. Preguntá por **hechos y comportamiento pasado**: *"¿cómo lo resolviste la última vez? ¿cuánto te costó? ¿cada cuánto te pasa?"* (todas salen del set de preguntas del Mom Test). A esas preguntas la cortesía no las puede contaminar. Si tu red zafa con generalidades ("uy sí, es un problemón") pero no tiene **ningún caso concreto** del pasado, ya tenés tu respuesta: era amabilidad.
 2. **Exigí compromiso real (commitment & advancement) — el verdadero detector de mentiras.** El entusiasmo no cuesta nada; lo que importa es si están dispuestos a poner **una de las tres monedas de verdad**:
    - **Tiempo** (una segunda reunión agendada, completar algo, probar un piloto),
    - **Reputación** (presentarte a su jefe / a un colega que tiene el problema, recomendarte públicamente),
@@ -185,7 +186,7 @@ Tabla con: approach usado, nº contactados / respuestas / **yeses calificados** 
 **No avances solo por entusiasmo** — el gate se decide con los **números y citas reales**, no con tu corazonada. Y nunca aceptes un "sí" tibio como validación.
 
 ### Retorno / continuidad (handoff)
-Una vez escrito el veredicto en `data/1-idea_phase/validacion-campo-<slug>.md`:
+Una vez escrito el veredicto en `data/idea-NNN-<slug>/1-idea_phase/validacion-campo.md`:
 - **Si te invocó `saas_idea_validar_2_20_200`** (estás corriendo como Fase 20 delegada): **devolvé el control** a ese comando en su gate 20→200, pasándole el veredicto. No arranques vos la Fase 200.
 - **Si te corrieron suelto** (standalone): si el veredicto es 🟢, recomendá continuar con `/saas_idea_validar_2_20_200` (que leerá este tablero y arrancará la Fase 200) o con los comandos de planificación/implementación del proyecto. Si es 🟡/🔴, recomendá ajustar y revalidar, o descartar, antes de escribir código.
 
@@ -193,7 +194,7 @@ Una vez escrito el veredicto en `data/1-idea_phase/validacion-campo-<slug>.md`:
 
 ## Plantilla del tablero de memoria
 
-Cuando crees `data/1-idea_phase/validacion-campo-<slug>.md`, usá esta estructura:
+Cuando crees `data/idea-NNN-<slug>/1-idea_phase/validacion-campo.md`, usá esta estructura:
 
 ```markdown
 # Validación de campo (~20h) — <título corto de la idea>
@@ -207,7 +208,7 @@ _Estado: en curso | cerrada (🟢/🟡/🔴)_
 - **Cómo lo resolvería:** ...
 - **¿Qué cambió al validar?:** ... (aprendizajes que movieron el problema/comprador/ángulo)
 
-## Insumos heredados (de prevalidacion-<slug>.md, si existe)
+## Insumos heredados (de prevalidacion.md en la misma carpeta de idea, si existe)
 - Veredicto 5 PM: 🟢/🟡/🔴
 - Comprador / canal / competidores / dónde busca la gente: ...
 

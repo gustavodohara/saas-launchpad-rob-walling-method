@@ -44,15 +44,16 @@ El sentido de pre-validar es **reemplazar corazonadas por evidencia**. Por eso e
 
 ## Memoria persistente — LEÉ ESTO ANTES DE NADA
 
-Cada idea pre-validada tiene su propio tablero en `data/1-idea_phase/prevalidacion-<slug-de-la-idea>.md` (ej: `data/1-idea_phase/prevalidacion-deploys-shopify-sin-visibilidad.md`).
+La persistencia vive en **una carpeta por idea**: `data/idea-NNN-<slug>/`, con subcarpetas de fase. El tablero de pre-validación es `data/idea-NNN-<slug>/1-idea_phase/prevalidacion.md` (ej: `data/idea-001-deploys-shopify-sin-visibilidad/1-idea_phase/prevalidacion.md`).
 
 Al iniciar:
 
-1. Derivá un **slug corto** (kebab-case, 3–5 palabras) de la idea y buscá `data/1-idea_phase/prevalidacion-<slug>.md`.
-2. Si **ya existe**, leelo entero: mostrá un resumen de qué dimensiones están cerradas, qué quedó `⏳ PENDIENTE`, y retomá desde ahí (no repreguntes lo confirmado). Lo primero al retomar es **pedir los datos pendientes** que el usuario fue a buscar.
+1. Derivá un **slug corto** (kebab-case, 3–5 palabras) de la idea y **ubicá la carpeta de la idea**: buscá `data/idea-*-<slug>/`. Si existe, usá su `1-idea_phase/prevalidacion.md`. Si la idea **no tiene carpeta todavía**, creala con el siguiente número correlativo (`data/idea-NNN-<slug>/` con sus tres subcarpetas de fase; NNN = máximo existente + 1, primera idea `001`).
+2. Si `1-idea_phase/prevalidacion.md` **ya existe**, leelo entero: mostrá un resumen de qué dimensiones están cerradas, qué quedó `⏳ PENDIENTE`, y retomá desde ahí (no repreguntes lo confirmado). Lo primero al retomar es **pedir los datos pendientes** que el usuario fue a buscar. Si en la misma carpeta hay `idea.md`, leelo para heredar el contexto de la ideación.
 3. Si **no existe**, créalo con la plantilla del final y arrancá por Problem.
 4. **A medida que aparece info** (un dato verificado con fuente, una respuesta del fundador, un veredicto), **actualizá el archivo** en la sección correspondiente, refrescá la fecha y avisalo en una línea ("📝 Guardado en el tablero"). La memoria es **acumulativa**.
-5. Si existe `data/1-idea_phase/perfil-fundador.md`, leelo: úsalo para no repreguntar ventajas, red, audiencia o skills que el fundador ya declaró en otros comandos.
+5. Si existe `data/perfil-fundador.md`, leelo: úsalo para no repreguntar ventajas, red, audiencia o skills que el fundador ya declaró en otros comandos.
+6. **Espejá en Google Drive.** Cada vez que actualices `1-idea_phase/prevalidacion.md` (cada "📝 Guardado en el tablero"), reflejalo también como Google Doc nativo en la carpeta espejo `analisis de ideas/idea-NNN-<slug>/1-idea_phase/` de Drive, siguiendo el mecanismo de **`CLAUDE.md` → "Espejo en Google Drive de los tableros de `data/`"** (buscar→crear/actualizar sin duplicar, contenido inline). Incluido en el mismo guardado, no como paso aparte.
 
 ---
 
@@ -125,7 +126,7 @@ Esta es la más larga. Recorré:
 
 > Está quinto a propósito: importa, pero menos que problema/comprador/precio/mercado.
 
-(Acá **sí preguntás al fundador** —una pregunta a la vez— porque es info interna. Si ya está en `data/1-idea_phase/perfil-fundador.md`, no repreguntes.)
+(Acá **sí preguntás al fundador** —una pregunta a la vez— porque es info interna. Si ya está en `data/perfil-fundador.md`, no repreguntes.)
 
 - **¿Tenés alguna ventaja única o injusta?** ¿Qué de tu background te califica? ¿Tenés un take o acceso únicos al mercado? Si el producto es muy técnico, ¿tenés los chops técnicos? Si el espacio está saturado, ¿tenés chops de marketing/ventas?
 - **Las 2 ventajas más poderosas según Rob: red fuerte o audiencia relevante.**
@@ -254,7 +255,7 @@ Una tabla con las 6 dimensiones, cada una con: **estado** (✅ verde / 🟡 amar
 Cerrá siempre listando los **datos PENDIENTES** que el fundador debe traer (con el query/herramienta exactos) para completar la pre-validación si quedó algo abierto, y guardá todo en el tablero.
 
 ### Retorno / continuidad (handoff con la validación de campo)
-Una vez escrito el veredicto en `data/1-idea_phase/prevalidacion-<slug>.md`:
+Una vez escrito el veredicto en `data/idea-NNN-<slug>/1-idea_phase/prevalidacion.md`:
 - **Si te invocó `saas_idea_validar_2_20_200`** (estás corriendo como Fase 2 delegada): **devolvé el control** a ese comando en su gate 2→20, pasándole el veredicto. No arranques vos la Fase 20.
 - **Si te corrieron suelto** (standalone): si el veredicto es 🟢, recomendá continuar con `/saas_idea_validar_2_20_200`, que leerá este mismo tablero y arrancará la Fase 20 (conversaciones + landing, sin código) sin repreguntarte el 5 PM. Si es 🟡/🔴, recomendá ajustar o descartar antes de seguir.
 
@@ -262,7 +263,7 @@ Una vez escrito el veredicto en `data/1-idea_phase/prevalidacion-<slug>.md`:
 
 ## Plantilla del tablero de memoria
 
-Cuando crees `data/1-idea_phase/prevalidacion-<slug>.md`, usá esta estructura:
+Cuando crees `data/idea-NNN-<slug>/1-idea_phase/prevalidacion.md`, usá esta estructura:
 
 ```markdown
 # Pre-validación 2h (5 PM) — <título corto de la idea>

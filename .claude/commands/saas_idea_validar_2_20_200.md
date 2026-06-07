@@ -24,14 +24,15 @@ Todo el sentido del 2/20/200 es **reemplazar tus corazonadas por evidencia real*
 
 ## Memoria persistente — LEÉ ESTO ANTES DE NADA
 
-Cada idea validada tiene su propio tablero en `data/1-idea_phase/validacion-<slug-de-la-idea>.md` (ej: `data/1-idea_phase/validacion-deploys-shopify-sin-visibilidad.md`).
+La persistencia vive en **una carpeta por idea**: `data/idea-NNN-<slug>/`, con subcarpetas de fase. Los tres tableros de la fase de idea conviven en `data/idea-NNN-<slug>/1-idea_phase/`: el **tablero maestro** de este comando es `validacion.md`, y las fases delegadas escriben `prevalidacion.md` y `validacion-campo.md` (mismo slug = misma carpeta de idea). Ej: `data/idea-001-deploys-shopify-sin-visibilidad/1-idea_phase/validacion.md`.
 
 Al iniciar:
 
-1. Derivá un **slug corto** de la idea (kebab-case, 3–5 palabras) y buscá `data/1-idea_phase/validacion-<slug>.md`.
-2. Si **ya existe**, leelo entero: mostrá un resumen de en qué fase está, qué hay verificado, qué quedó `⏳ PENDIENTE`, y retomá desde ahí (no repreguntes lo confirmado). Lo primero que hacés al retomar es **pedir los datos pendientes** que el usuario haya ido a buscar.
+1. Derivá un **slug corto** de la idea (kebab-case, 3–5 palabras) y **ubicá la carpeta de la idea**: buscá `data/idea-*-<slug>/`. Si existe, usá su `1-idea_phase/validacion.md`. Si la idea **no tiene carpeta todavía**, creala con el siguiente número correlativo (`data/idea-NNN-<slug>/` con sus tres subcarpetas de fase; NNN = máximo existente + 1, primera idea `001`).
+2. Si `1-idea_phase/validacion.md` **ya existe**, leelo entero: mostrá un resumen de en qué fase está, qué hay verificado, qué quedó `⏳ PENDIENTE`, y retomá desde ahí (no repreguntes lo confirmado). Lo primero que hacés al retomar es **pedir los datos pendientes** que el usuario haya ido a buscar.
 3. Si **no existe**, créalo con la plantilla del final de este documento y arrancá la Fase 2.
 4. **A medida que aparece info nueva** (un dato verificado, un resultado de campo, una decisión), **actualizá el archivo** en la sección correspondiente, refrescá la fecha y avisalo en una línea ("📝 Guardado en el tablero"). La memoria es **acumulativa**: cada "yes", cada opt-in, cada conversación se registra con fecha.
+5. **Espejá en Google Drive.** Cada vez que actualices `1-idea_phase/validacion.md` (cada "📝 Guardado en el tablero"), reflejalo también como Google Doc nativo en la carpeta espejo `analisis de ideas/idea-NNN-<slug>/1-idea_phase/` de Drive, siguiendo el mecanismo de **`CLAUDE.md` → "Espejo en Google Drive de los tableros de `data/`"** (buscar→crear/actualizar sin duplicar, contenido inline). Esto aplica al tablero maestro de este comando; los tableros de las fases delegadas (`prevalidacion.md`, `validacion-campo.md`) los espeja cada sub-comando.
 
 ## Filosofía central (no la negocies)
 
@@ -61,17 +62,17 @@ Si el producto completo se puede construir en ~30–40 h (pocas semanas), quizá
 
 ### Cómo delegar (qué hacer en este punto)
 
-1. **Mirá primero el puente de memoria.** Buscá `data/1-idea_phase/prevalidacion-<slug>.md` (mismo slug que usás para `validacion-<slug>.md`).
+1. **Mirá primero el puente de memoria.** Buscá `data/idea-NNN-<slug>/1-idea_phase/prevalidacion.md` (la misma carpeta de idea donde vive `validacion.md`).
    - **Si ya existe y está cerrado** con veredicto (🟢/🟡/🔴): la Fase 2 ya se hizo. Mostrá un resumen del scorecard 5 PM + demanda y **saltá directo al gate de abajo**. No repreguntes nada.
    - **Si existe pero está en curso** (quedaron `⏳ PENDIENTE`): retomalo invocando el comando dedicado para completarlo.
    - **Si no existe**: invocá el comando dedicado para correr la pre-validación desde cero.
-2. **Invocá la skill `saas_idea_prevalidar_2h`** pasándole la idea (`$ARGUMENTS` / la idea del tablero). A partir de ahí conducís la pre-validación con SUS instrucciones: recorrés el 5 PM, hacés el research web, pedís inputs **una pregunta a la vez**, y todo se guarda en `data/1-idea_phase/prevalidacion-<slug>.md`.
+2. **Invocá la skill `saas_idea_prevalidar_2h`** pasándole la idea (`$ARGUMENTS` / la idea del tablero). A partir de ahí conducís la pre-validación con SUS instrucciones: recorrés el 5 PM, hacés el research web, pedís inputs **una pregunta a la vez**, y todo se guarda en `data/idea-NNN-<slug>/1-idea_phase/prevalidacion.md`.
 3. **Cuando la pre-validación cierra** (tablero escrito + veredicto), **retomá ESTE comando** en el gate de abajo. El veredicto de la pre-validación ES el insumo del gate 2→20.
 
-> Si la conversación se corta durante la pre-validación, no se pierde nada: el tablero `prevalidacion-<slug>.md` es el punto de sincronización. Al re-correr `/saas_idea_validar_2_20_200` volvés acá, ves que ya existe, y seguís en el gate.
+> Si la conversación se corta durante la pre-validación, no se pierde nada: el tablero `prevalidacion.md` es el punto de sincronización. Al re-correr `/saas_idea_validar_2_20_200` volvés acá, ves que ya existe, y seguís en el gate.
 
 ### Gate de la Fase 2 → 20
-Tomá el **veredicto del scorecard 5 PM** de `data/1-idea_phase/prevalidacion-<slug>.md` y registralo en este tablero (sección "Fase 2 — Pre-validación"):
+Tomá el **veredicto del scorecard 5 PM** de `data/idea-NNN-<slug>/1-idea_phase/prevalidacion.md` y registralo en este tablero (sección "Fase 2 — Pre-validación"):
 
 - **🟢 Verde** → pasás a la Fase 20. Hay indicios reales de que (a) el problema existe ahí afuera y (b) podés ubicar a esa gente.
 - **🟡 Amarillo** → **no avances todavía**: ajustá nicho/comprador/ángulo/canal según lo que marcó la pre-validación y completá los `⏳ PENDIENTE` antes de gastar 20 horas.
@@ -92,17 +93,17 @@ La gente de tu red te va a decir lo que querés oír por ser amable o por curios
 
 ### Cómo delegar (qué hacer en este punto)
 
-1. **Mirá primero el puente de memoria.** Buscá `data/1-idea_phase/validacion-campo-<slug>.md` (mismo slug que usás para `validacion-<slug>.md`).
+1. **Mirá primero el puente de memoria.** Buscá `data/idea-NNN-<slug>/1-idea_phase/validacion-campo.md` (la misma carpeta de idea donde vive `validacion.md`).
    - **Si ya existe y está cerrado** con veredicto (🟢/🟡/🔴): la Fase 20 ya se hizo. Mostrá un resumen de la señal real (yeses calificados, opt-ins, citas) y **saltá directo al gate de abajo**. No repreguntes nada.
    - **Si existe pero está en curso** (quedaron `⏳ PENDIENTE`): retomalo invocando el comando dedicado para completarlo.
    - **Si no existe**: invocá el comando dedicado para correr la validación de campo desde cero.
-2. **Invocá la skill `saas_idea_validar_20h`** pasándole la idea (`$ARGUMENTS` / la idea del tablero). A partir de ahí conducís la validación de campo con SUS instrucciones: elegís approach, armás el outreach, preparás las preguntas del Mom Test, registrás los resultados reales **una pregunta a la vez**, y todo se guarda en `data/1-idea_phase/validacion-campo-<slug>.md`. Hereda lo de `prevalidacion-<slug>.md` para no repreguntar.
+2. **Invocá la skill `saas_idea_validar_20h`** pasándole la idea (`$ARGUMENTS` / la idea del tablero). A partir de ahí conducís la validación de campo con SUS instrucciones: elegís approach, armás el outreach, preparás las preguntas del Mom Test, registrás los resultados reales **una pregunta a la vez**, y todo se guarda en `data/idea-NNN-<slug>/1-idea_phase/validacion-campo.md`. Hereda lo de `prevalidacion.md` (misma carpeta) para no repreguntar.
 3. **Cuando la validación de campo cierra** (tablero escrito + veredicto), **retomá ESTE comando** en el gate de abajo. El veredicto de campo ES el insumo del gate 20→200.
 
-> Si la conversación se corta durante la validación de campo, no se pierde nada: el tablero `validacion-campo-<slug>.md` es el punto de sincronización. Al re-correr `/saas_idea_validar_2_20_200` volvés acá, ves que ya existe, y seguís en el gate.
+> Si la conversación se corta durante la validación de campo, no se pierde nada: el tablero `validacion-campo.md` es el punto de sincronización. Al re-correr `/saas_idea_validar_2_20_200` volvés acá, ves que ya existe, y seguís en el gate.
 
 ### Gate de la Fase 20 → 200
-Tomá el **veredicto de campo** de `data/1-idea_phase/validacion-campo-<slug>.md` y registralo en este tablero (sección "Fase 20 — Campo"). Compará los **números reales** contra los umbrales (yeses calificados ~11–40 según ACV; opt-in sano con volumen real):
+Tomá el **veredicto de campo** de `data/idea-NNN-<slug>/1-idea_phase/validacion-campo.md` y registralo en este tablero (sección "Fase 20 — Campo"). Compará los **números reales** contra los umbrales (yeses calificados ~11–40 según ACV; opt-in sano con volumen real):
 
 - **🟢 Verde** → pasás a la Fase 200. Hay señal suficiente: suficientes yeses calificados y/o opt-in sano con volumen, y dolor demostrado.
 - **🟡 Amarillo** → **no construyas todavía**: ajustá nicho/oferta/ángulo/canal según lo que aprendiste en campo y volvé a medir.
@@ -126,7 +127,7 @@ Tomá el **veredicto de campo** de `data/1-idea_phase/validacion-campo-<slug>.md
 
 ## Plantilla del tablero de memoria
 
-Cuando crees `data/1-idea_phase/validacion-<slug>.md`, usá esta estructura:
+Cuando crees `data/idea-NNN-<slug>/1-idea_phase/validacion.md`, usá esta estructura:
 
 ```markdown
 # Validación 2/20/200 — <título corto de la idea>
@@ -140,7 +141,7 @@ _Fase actual: 2 | 20 | 200_
 - **Cómo lo resolvería:** ...
 
 ## Fase 2 — Pre-validación (2h) — DELEGADA a saas_idea_prevalidar_2h
-- Tablero detallado: `data/1-idea_phase/prevalidacion-<slug>.md` (5 PM + demanda SEO con fuentes)
+- Tablero detallado: `1-idea_phase/prevalidacion.md` (misma carpeta de idea; 5 PM + demanda SEO con fuentes)
 - Veredicto del scorecard 5 PM: 🟢/🟡/🔴 — <razón en 1 línea>
 - Datos clave heredados (lo que importa para Fase 20): <competidores, precios, comprador, canal>
 - Gate 2→20: <pasa / ajustar / frenar> — fecha
