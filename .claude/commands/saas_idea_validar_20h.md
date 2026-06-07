@@ -94,6 +94,8 @@ Preguntá al fundador (una pregunta) qué tipo de funnel imagina (self-serve vs 
 
 ## APPROACH 1 — Hablar con gente
 
+> **¿Querés ejecutar esto como una campaña sistemática (al estilo de las ~100 llamadas de Jason Buckingham)?** Hay un comando dedicado, **`/saas_idea_campana_llamadas`**, que es el **motor operativo** de este approach: cómo conseguir y agendar las llamadas, cuántos emails mandar y qué respuesta esperar (~10 emails/sem → 3 llamadas/sem, ~40 por industria, ≥75% con el problema), qué decir y qué posición adoptar antes/durante/después de cada llamada, el ritual de "game tape" para mejorar, el cierre con **pre-venta de cheques** (barra de 5), y un **template de hoja de cálculo** para trackear todo. Escribe en `1-idea_phase/campana-llamadas.md` (mismo folder de idea) y sus yeses calificados **alimentan** la sección de abajo. Usalo cuando el approach principal sean conversaciones; lo de acá es el marco, aquél es la ejecución.
+
 ### Warm vs Cold (cálido vs frío)
 
 | | **Warm** | **Cold** |
