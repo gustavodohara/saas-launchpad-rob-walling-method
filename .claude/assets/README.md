@@ -24,8 +24,9 @@ Es "parte del comando", no datos de una idea concreta.
 │   └── ...
 ```
 
-El nombre de la subcarpeta = nombre del comando **sin el prefijo `saas_idea_`**
-(ej. el comando `saas_idea_campana_landing.md` → carpeta `campana_landing/`).
+El nombre de la subcarpeta = nombre del comando **sin su prefijo de familia `saas_<familia>_`**
+(ej. el comando `saas_idea_campana_landing.md` → carpeta `campana_landing/`; el comando
+`saas_build_mvp_5pasos.md` → carpeta `mvp_5pasos/`).
 
 ## Cómo referenciar desde un comando
 

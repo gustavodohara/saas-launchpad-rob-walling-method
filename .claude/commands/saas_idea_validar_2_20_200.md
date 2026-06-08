@@ -121,11 +121,11 @@ Tomá el **veredicto de campo** de `data/idea-NNN-<slug>/1-idea_phase/validacion
 > Objetivo: con la validación de campo a favor, invertir ~200 horas en un **MVP** y ponerlo en manos de usuarios reales.
 
 - Aplicá acá el **caveat de honestidad** de arriba: si el alcance real es chico (~30–40h verificables), quizá construir directo tenga sentido — pero desconfía del autoengaño del dev.
-- Esta fase es de ejecución/producto y excede el alcance de este comando de validación. Acá tu rol es:
+- Esta fase es de ejecución/producto y excede el alcance de este comando de validación: acá la planificación y construcción del MVP las conducen los comandos dedicados de la familia **`saas_build_`** (sus tableros viven en `2-build_phase/`, no en `1-idea_phase/`). Acá tu rol es:
   1. Confirmar que se pasó el gate de la Fase 20 con datos reales (si no, **frená y volvé a la Fase 20**).
   2. Recordar el caveat de las ~200 horas y de no irse a "vivir al sótano".
-  3. Dejar registrado en el tablero la **decisión de construir** (fecha, con qué evidencia se tomó) y, si corresponde, sugerir continuar con los comandos de planificación/implementación del proyecto.
-  4. **Si el MVP va a incorporar IA**, sugerí correr `/saas_idea_evaluar_ia` (escribe `2-build_phase/evaluacion-ia.md`): hace el gate "¿IA es siquiera el approach correcto?" (tener un problema **no** obliga a resolverlo con IA) y, si va, recorre los 16 riesgos de Arvid Kahl (abuso/costo, observabilidad, calidad del output, relacionales y legales) con mitigaciones y un veredicto de build-readiness. Si el MVP no usa IA, salteálo.
+  3. Dejar registrado en el tablero la **decisión de construir** (fecha, con qué evidencia se tomó) y **sugerí continuar con `/saas_build_mvp_5pasos`** (escribe `2-build_phase/plan-mvp.md`): los 5 pasos de Rob Walling para planificar/construir el MVP — primero el gate "¿MVP o lanzar la v1 directa?" + nombrar el supuesto más riesgoso, y después objetivo, features core, approach (human automation → no-code → full code), timeline y ejecución, cerrando con un veredicto de plan-readiness. Hereda la señal real de campo de `1-idea_phase/validacion-campo.md`.
+  4. **Si el MVP va a incorporar IA**, sugerí correr también `/saas_idea_evaluar_ia` (escribe `2-build_phase/evaluacion-ia.md`): hace el gate "¿IA es siquiera el approach correcto?" (tener un problema **no** obliga a resolverlo con IA) y, si va, recorre los 16 riesgos de Arvid Kahl (abuso/costo, observabilidad, calidad del output, relacionales y legales) con mitigaciones y un veredicto de build-readiness. Si el MVP no usa IA, salteálo.
 
 ---
 
