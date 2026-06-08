@@ -86,7 +86,7 @@ Tomá el **veredicto del scorecard 5 PM** de `data/idea-NNN-<slug>/1-idea_phase/
 
 > Objetivo: invertir ~20 horas en **outreach, conversaciones y/o una landing**, todavía **sin escribir código**. Hay dos approaches; Rob suele hacer **ambos**. Elegí según el tipo de funnel que tendrá el producto.
 
-**Esta fase la conduce el comando dedicado `saas_idea_validar_20h`** (única fuente de verdad del playbook de campo: warm/cold outreach, hangouts, Mom Test, landing sin screenshots, umbrales de yeses/opt-in). No la dupliques acá.
+**Esta fase la conduce el comando dedicado `saas_idea_validar_20h`** (única fuente de verdad del playbook de campo: warm/cold outreach, hangouts, Mom Test, landing sin screenshots, umbrales de yeses/opt-in). No la dupliques acá. Sus dos approaches tienen **motores operativos** propios que el `saas_idea_validar_20h` invoca según convenga: **`saas_idea_campana_llamadas`** (Approach 1 — campaña de llamadas/entrevistas) y **`saas_idea_campana_landing`** (Approach 2 — landing page + tráfico).
 
 ### ⚠️ Curse of the audience (recordáselo siempre)
 La gente de tu red te va a decir lo que querés oír por ser amable o por curiosear. Un "sí" tibio ("qué interesante, probaría") **no es** un "sí" de validación. Calificá duro y buscá señales de dolor real y disposición a pagar.

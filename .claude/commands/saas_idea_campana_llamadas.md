@@ -71,7 +71,7 @@ Antes de mandar el primer email, dejá definido y guardado:
 
 1. **El nicho/industria de esta tanda.** Buckingham probó varias; cada tanda es **una industria/vertical concreta**. Si ya hay un nicho del `prevalidacion.md`, confirmalo. Si el fundador duda entre dos, empezá por uno: una tanda a la vez.
 2. **El umbral de la campaña** (heredalo de `validacion-campo.md` o fijalo acá). Punto de partida Buckingham: **~40 llamadas por industria, ≥75% con el problema** — pero **ese 75% es de un mercado chico/poca demanda; en un mercado grande o de alta demanda el % exigible es menor** (Buckingham menciona que con ~25% puede alcanzar en un mercado grande). Definí el % **según tu TAM/demanda**, no por copia (ver "Leer patrones — ajuste por TAM/demanda"). Y el umbral de **compromiso/pre-venta**: punto de partida **5 cheques**, pero el instrumento (cheque) y el número son de su caso — adaptá la **moneda real** que aplique a tu producto/cliente y el número que te dé confianza.
-3. **La cadencia semanal sostenible.** Default Buckingham: **~10 emails/DMs fríos por semana → meta de 3 llamadas agendadas/semana**. Preguntá cuánto tiempo real por semana tiene el fundador y ajustá la meta (sin bajar de algo que mantenga ritmo). A ~3 llamadas/semana, **40 llamadas ≈ 10–13 semanas.** Decílo de entrada: **es un maratón de meses, no un sprint.**
+3. **La cadencia semanal sostenible.** Default Buckingham: **~10 emails/DMs fríos por semana → meta de 3 llamadas agendadas/semana**. Preguntá cuánto tiempo real por semana tiene el fundador y ajustá la meta (sin bajar de algo que mantenga ritmo). A ~3 llamadas/semana, **40 llamadas ≈ 10–12 semanas** (lo que dijo Buckingham). Decílo de entrada: **es un maratón de meses, no un sprint.**
 4. **Warm + cold.** Listá primero la **red** (warm) que tenga el problema o sea comprador, y en paralelo armá el pipeline **cold**. La warm calibra contra el cold (ver Curse of the audience en el de 20h).
 5. **La hoja de cálculo de tracking.** Proponé crear la Google Sheet con el template de la sección "HOJA DE CÁLCULO" y dejá su link en el tablero. Es el sistema operativo de la campaña.
 
@@ -109,7 +109,7 @@ El encuadre que a Buckingham le dio **3–4 respuestas cada 10 emails** y llamad
 | Duración real | "ninguna bajó de 45 min" | Pediste 15; preparate para 45–60 |
 | Llamadas por industria | **~40** | Volumen para ver patrón (no 5, no 10) |
 | % con el problema | **≥75%** (≈30–35/40) | Umbral de patrón en mercado chico/medio |
-| Semanas de campaña | ~10–13 | A 3/semana. Es un maratón |
+| Semanas de campaña | ~10–12 | A 3/semana. Es un maratón |
 | Cheques de pre-venta | **5** (cerró con 4 clientes) | La moneda real; barra anti-falsos-positivos |
 
 **Cálculo rápido para el fundador:** `emails/semana × tasa_respuesta = llamadas/semana`; `meta_llamadas ÷ llamadas/semana = semanas`. Mostrale su propio cálculo con sus números y su tiempo disponible. Si solo puede 5 emails/semana, decile honestamente que el maratón es más largo — no le bajes el umbral para que parezca rápido.

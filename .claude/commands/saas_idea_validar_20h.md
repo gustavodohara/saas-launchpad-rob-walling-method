@@ -153,6 +153,8 @@ Cada sesión, pedí y registrá en el tablero con **fecha · contacto (warm/cold
 
 ## APPROACH 2 — Landing page + tráfico (si el funnel será self-serve)
 
+> **¿Querés ejecutar esto como una campaña sistemática?** Hay un comando dedicado, **`/saas_idea_campana_landing`**, que es el **motor operativo** de este approach: cómo debe verse y qué debe decir una buena landing de validación (H1 que nombra el problema + para quién, H2 de diferenciación, CTA de captura de email), ejemplos reales (SwipeWell, Transistor, Setup, Level, Tuple, Buffer), cuándo conviene un sales letter / manifiesto, por qué **NO** screenshots todavía, cómo leer las métricas de éxito (volumen + % de opt-in), cómo iterar headline/canal, el "mushy middle" inconcluso, y un **template de hoja de cálculo** para trackear versiones, tráfico y conversiones. Escribe en `1-idea_phase/campana-landing.md` (mismo folder de idea) y sus opt-ins/% **alimentan** la sección de abajo. Usalo cuando el approach principal sea la landing; lo de acá es el marco, aquél es la ejecución.
+
 - **Propósito de la landing:** comunicar **qué problema resolvés** y para quién + capturar email (o un link de calendario tipo SavvyCal/Calendly para agendar charlas — que de paso te empuja a conversaciones).
 - **Sin screenshots.** Rob nunca los usó: mostrar la solución presupone que ya sabés cómo la vas a resolver, y todavía estás validando si el **problema** importa. Mantené **headline + 2–4 frases provocativas** (qué vas a hacer y para quién). Sin proponer el "cómo".
 - **Tráfico:** las mismas tácticas que usarías con el producto terminado (paid ads, SEO, podcast, Twitter, referidos). Si no podés llevar a nadie ahora, **¿cómo lo harás con producto?** (test brutal otra vez).
