@@ -1,19 +1,18 @@
 # Demo: "Steal This Process to Write Your MVP Landing Page" — Liana Patch (Punchline Copy)
 
-> **Qué es esto.** Transcript (limpiado y organizado) de una sesión grabada por **Liana Patch**
-> (conversion copywriter, [punchlinecopy.com](https://punchlinecopy.com)) para el curso de Rob Walling.
-> Escribe **en vivo, desde cero**, la landing de un CRM ficticio (**Bump CRM**, el mismo del curso)
-> sin founder al que entrevistar ni research de clientes — solo con lo que hay en G2 / Trustpilot /
-> Reddit. Es el **proceso de redacción** (el "cómo escribir el copy"), complementario a la anatomía
-> y las métricas del comando `/saas_idea_campana_landing`.
+> **Qué es esto.** Transcript (limpiado y organizado) de una sesión del **mismo curso de Rob Walling**
+> (SaaS Launchpad), presentada por **Liana Patch** (conversion copywriter,
+> [punchlinecopy.com](https://punchlinecopy.com)). Escribe **en vivo, desde cero**, la landing de un CRM
+> ficticio (**Bump CRM**, el mismo del curso) sin founder al que entrevistar ni research de clientes —
+> solo con lo que hay en G2 / Trustpilot / Reddit. Es el **proceso de redacción** (el "cómo escribir el
+> copy") que acompaña a la anatomía y las métricas del comando `/saas_idea_campana_landing`.
 >
 > **El template que referencia** (su "Google Doc base") está junto a este archivo:
 > `steal-this-process-mvp-landing-page.pdf`. Liana invita explícitamente a copiarlo y rellenarlo
 > igual que ella en la demo.
 >
-> **Atribución:** esto NO es el video de Rob Walling sobre la landing del "20". Es una **fuente
-> distinta** (Liana Patch / Punchline Copy). El comando lo trata como recurso complementario de
-> copywriting, no como doctrina de Walling.
+> **Atribución:** es **material del mismo curso** que el resto del comando (misma fuente/autoridad que
+> el video de la landing del "20"), presentado por Liana Patch.
 
 ---
 
