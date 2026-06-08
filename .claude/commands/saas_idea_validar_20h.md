@@ -173,6 +173,31 @@ Cada sesión, pedí y registrá en el tablero con **fecha · contacto (warm/cold
 - **3–4 yeses = poca señal.** El número correcto suele estar **entre ~11 y ~40**, según ACV y tipo de cliente (un yes de $99/mes con compromiso pesa más que diez "lo probaría").
 - Si **nadie** te habla / nadie responde → recordá el **test brutal**: si no los encontrás ahora, no los vas a encontrar con producto.
 
+### ¿Cuánto tiempo debería llevar validar? — medilo por conversaciones, no por reloj
+La validación **no es binaria, es un continuo**, y no se mide en semanas sino en **conversaciones + tu tasa de éxito**:
+- **El objetivo es des-riesgar, no eliminar el riesgo:** lo bajás de ~100% a 80/70/60% de chance de fracaso. Nunca llega a 0.
+- **La vara real es si estás APRENDIENDO.** Que lo aprendido apoye o refute tu hipótesis da igual. Si tenés **5 charlas seguidas que ni prueban ni refutan** nada → hablás con la **gente equivocada** o hacés las **preguntas equivocadas** (revisá el Mom Test).
+- **Tasa de éxito como termómetro:** si **~80% de los prospectos calificados** dicen que **no pagarían**, es un problema (gente equivocada o producto equivocado para esa gente); si **~80% dicen "tomá mi plata"**, estás en algo; en el medio es lo que hace dura esta etapa. Por eso 40 yeses (Jason Cohen/WP Engine) pesa más que 11 (Rob/Drip), y el número justo suele estar entremedio.
+- **Regla de pulgar (loose, no es ley):** la validación suele llevar **más de 2 semanas y menos de 2 meses**. Si te encontrás teniendo conversación tras conversación **durante meses sin fin**, es hora de **pivotear o pasar a la próxima idea**.
+
+---
+
+## ⚠️ RED FLAGS DE VALIDACIÓN — vigilálas durante toda esta fase
+
+> Texto canónico completo (las 13 + la guía de tiempo de arriba): **`.claude/assets/_compartido/rob-walling-validation-red-flags.md`**. Acá va el resumen operativo para que las detectes en vivo y las registres en el tablero.
+
+Una red flag **no mata la idea**: señala que falta **desarrollar la propuesta de valor / el problema / el cómo / la comunicación** antes de seguir. La causa suele ser inexperiencia, o que la idea se te volvió **demasiado preciosa** y te ciega. Como coach, cada vez que detectes una, **nombrala explícitamente** al fundador y registrala en el tablero (sección "Red flags detectadas") — no la dejes pasar por entusiasmo.
+
+Las 13, agrupadas por dónde aparecen en esta fase:
+
+- **Resistencia / acceso a la gente** — (1) estás **evitando hablar** con clientes potenciales (miedo a escuchar un "no"); (2) **te cuesta encontrar** gente del mercado con quién hablar (el test brutal: si no los hallás ahora "sin vender nada", menos con producto).
+- **Claridad de la idea** — (3) **no podés describir** la idea/propuesta de valor en una frase (demasiado complicada); (4) **no podés identificar un grupo específico** que la use (sin ICP acotado, "todo el planeta" = problema); (11) llevás **>1–2 meses** de customer dev y aún no podés responder para-quién / qué-hace / qué-precio.
+- **Modelo de negocio** — (5) **no podés cobrar directo** (dependés de ads / % de revenue → es hobby, no producto); (6) depende de un **mercado de dos lados**; (7) es una **red social** (las 6 y 7: casi imposibles de bootstrapear → en general, no).
+- **Señal del mercado** — (8) **no hay problema común** entre la gente con la que hablaste (20 personas, 20 problemas distintos → serías agencia a medida; hay que cavar más o cambiar de gente); (9) dicen **"interesante" pero nadie prueba/paga** (probablemente no es un dolor real); (13) **quieren algo que no podés entregar** (demasiado grande, o todos lo quieren custom).
+- **Vos mismo (founder)** — (10) **no te ves en esto en 5 años**, lo hacés solo por la plata (product-founder fit débil); (12) **te cuesta ser objetivo** y reaccionás *embistiendo* la red flag para "demostrar que podés" — la más peligrosa: tratala como señal para **pivotear**, no como desafío.
+
+> Varias de estas mapean 1:1 con lo que ya conducís: la #1 y la #2 son la **resistencia** que esta fase existe para vencer; la #8 es lo que el Approach 1 detecta llamando (ver `/saas_idea_campana_llamadas`, caso pizzerías); la #3 y la #4 son lo que un buen H1 de landing expone (ver `/saas_idea_campana_landing`); la #9 es el "sí tibio" de la **Curse of the audience**.
+
 ---
 
 ## CIERRE — Gate de decisión → Fase 200 (el MVP, ~200h)
@@ -236,6 +261,9 @@ _Estado: en curso | cerrada (🟢/🟡/🔴)_
 ### Log de landing (fecha · visitas · opt-ins · % · canal)
 - ...
 
+## Red flags detectadas (ver `.claude/assets/_compartido/rob-walling-validation-red-flags.md`)
+- [ ] <nº y nombre de la red flag> — <evidencia concreta de esta validación> — <qué desarrollar/ajustar>
+
 ## Veredicto + gate → Fase 200
 - Señal real (yeses / opt-ins / citas): ...
 - Veredicto: 🟢/🟡/🔴 — razón
@@ -247,4 +275,4 @@ _Estado: en curso | cerrada (🟢/🟡/🔴)_
 
 ---
 
-**Recordá:** una pregunta a la vez; el research de "dónde está la gente" lo hacés vos (con fuente), los resultados de campo los trae el fundador (cero supuestos); empujá a hacer los DOS approaches aunque el funnel sea self-serve; usá el Mom Test (pasado concreto, no hipotéticos; ellos hablan, vos escuchás); calificá duro y no aceptes un "sí" tibio; no escribís código ni construís landing en esta fase; y cerrás con gate 🟢/🟡/🔴 hacia las ~200 horas del MVP.
+**Recordá:** una pregunta a la vez; el research de "dónde está la gente" lo hacés vos (con fuente), los resultados de campo los trae el fundador (cero supuestos); empujá a hacer los DOS approaches aunque el funnel sea self-serve; usá el Mom Test (pasado concreto, no hipotéticos; ellos hablan, vos escuchás); calificá duro y no aceptes un "sí" tibio; vigilá las **13 red flags** y nombralas cuando aparezcan (tratá la #12 —perder objetividad— como señal de pivote, no como desafío); medí el avance por **conversaciones + tasa de éxito** (>2 semanas y <2 meses; ~80% de "no" = problema), no por reloj; no escribís código ni construís landing en esta fase; y cerrás con gate 🟢/🟡/🔴 hacia las ~200 horas del MVP.

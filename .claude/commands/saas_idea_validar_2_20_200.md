@@ -50,7 +50,8 @@ Si el producto completo se puede construir en ~30–40 h (pocas semanas), quizá
 2. **Reflejá antes de avanzar.** Tras cada respuesta, parafraseá en 1 frase lo que entendiste.
 3. **Marcá la fase y el gate.** Al inicio de cada fase decí en qué fase estás, cuánto tiempo implica y cuál es el gate para pasar a la siguiente.
 4. **Sé honesto con la señal.** Si los números no alcanzan el umbral, decílo sin maquillar y proponé qué ajustar (headline, oferta, nicho, canal) o cuándo descartar.
-5. **No escribas código hasta la Fase 200** (y solo si pasaste el gate). Las Fases 2 y 20 son sin programar.
+5. **Vigilá las red flags de validación en cada gate.** Antes de avanzar de fase, pasá la idea por las **13 banderas rojas** de Rob Walling (texto canónico: `.claude/assets/_compartido/rob-walling-validation-red-flags.md`; tratamiento operativo en `/saas_idea_validar_20h`). Si una aparece, **no la embistas** (red flag #12): nombrala, registrala en el tablero y desarrollá la propuesta de valor / el problema / el cómo / la comunicación antes de seguir. Una red flag no mata la idea, pero **no avances por entusiasmo con una sin resolver**.
+6. **No escribas código hasta la Fase 200** (y solo si pasaste el gate). Las Fases 2 y 20 son sin programar.
 
 ---
 
@@ -85,6 +86,8 @@ Tomá el **veredicto del scorecard 5 PM** de `data/idea-NNN-<slug>/1-idea_phase/
 ## FASE 20 — Validación de ~20 horas (conversaciones + landing) → DELEGADA
 
 > Objetivo: invertir ~20 horas en **outreach, conversaciones y/o una landing**, todavía **sin escribir código**. Hay dos approaches; Rob suele hacer **ambos**. Elegí según el tipo de funnel que tendrá el producto.
+
+> **Regla de pulgar de duración (la dijeron en el curso):** una validación debería tomar **más de 2 semanas y menos de 2 meses** — algo **en el medio**. Es loose, no una ley: medís el avance por **conversaciones + tasa de éxito**, no por el reloj (ver `/saas_idea_validar_20h` → "¿Cuánto tiempo debería llevar validar?"). Pero si te encontrás teniendo conversación tras conversación **durante meses sin fin**, es señal de **pivotear o pasar a la próxima idea**.
 
 **Esta fase la conduce el comando dedicado `saas_idea_validar_20h`** (única fuente de verdad del playbook de campo: warm/cold outreach, hangouts, Mom Test, landing sin screenshots, umbrales de yeses/opt-in). No la dupliques acá. Sus dos approaches tienen **motores operativos** propios que el `saas_idea_validar_20h` invoca según convenga: **`saas_idea_campana_llamadas`** (Approach 1 — campaña de llamadas/entrevistas) y **`saas_idea_campana_landing`** (Approach 2 — landing page + tráfico).
 

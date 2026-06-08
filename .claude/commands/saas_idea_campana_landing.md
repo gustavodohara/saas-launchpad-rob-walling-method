@@ -196,6 +196,8 @@ La landing es, en el fondo, un **medidor de cuánto importa el problema**. Leé 
 - **Importa** → podés mover tráfico **y** un % sano da su email por una headline que solo describe un dolor (sin mostrar solución). Eso es gente diciendo "esto me pasa, contame más".
 - **No importa (o no lo comunicaste)** → casi nadie llega y/o nadie convierte. El **mejor caso de un fracaso** es justamente este: cero visitas + cero conversiones te dice **claro** que o no es un problema que la gente quiera resolver, o no lo comunicaste bien. Es información valiosa y barata.
 
+> **Las red flags de validación que la landing expone.** *〔Las 13 red flags salen de **otra sesión del mismo curso** (Rob Walling, SaaS Launchpad) — misma fuente/autoridad, no extrapolación. Texto canónico: `.claude/assets/_compartido/rob-walling-validation-red-flags.md`; tratamiento operativo en `/saas_idea_validar_20h`.〕* Una landing es un detector temprano de varias: **#3** si te cuesta destilar el H1 a una frase, la idea es *demasiado complicada* de comunicar; **#4** si no podés escribirle a un grupo específico (el H1 le habla a "todo el planeta"), no tenés ICP; **#5** validá que podés **cobrar directo** (la CTA captura interés, pero el modelo no puede depender de ads / % de revenue); **#9** "interesante" pero **nadie deja el email** = no es un dolor real (o no lo comunicaste). Una red flag no mata la idea: iterá H1/ángulo/canal **antes** de escribir código — y no la *embistas* (red flag #12).
+
 ---
 
 ## ¿QUÉ ES "ÉXITO"? — cómo decidir si avanzás al MVP

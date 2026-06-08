@@ -180,6 +180,8 @@ Buckingham no paró en la primera señal: hizo ~40 para confirmar que el problem
 
 Si la tanda no da patrón → **no fuerces la idea**: proponé la **siguiente industria/vertical** y abrí una nueva tanda (nuevo Setup, mismo tablero o uno por idea según corresponda).
 
+> **Red flags que esta campaña detecta antes que nadie** (texto canónico de las 13: `.claude/assets/_compartido/rob-walling-validation-red-flags.md`; tratamiento operativo en `/saas_idea_validar_20h`). Las llamadas son donde más temprano aparecen: **#1** estás *evitando* llamar (la resistencia que este comando existe para vencer); **#2** no encontrás a quién llamar o nadie responde al encuadre "no tengo nada que venderte" (señal gratis de que quizá no tienen el problema); **#8** *no hay problema común* —20 llamadas, 20 problemas distintos— que es exactamente las **pizzerías de Buckingham** (→ cambiá de industria, no fuerces); **#9** dicen "interesante" pero **no firman el cheque** (cortesía, no dolor real). Si detectás una, nombrala, registrala en el tablero y **no la embistas** (red flag #12).
+
 ---
 
 ## PRE-VENTA — convertir patrón en cheques (la validación de verdad)
