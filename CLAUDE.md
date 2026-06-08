@@ -1,5 +1,23 @@
 # Instrucciones del proyecto
 
+## Referencias de comandos (imágenes, PDFs, diagramas)
+
+El material de conocimiento **estable** que consume un comando (imágenes, PDFs, diagramas,
+plantillas visuales, screenshots de ejemplo) vive en `.claude/assets/` y **se versiona
+en git**. Es "parte del comando", no datos de una idea.
+
+- Una subcarpeta por comando, nombrada **sin el prefijo `saas_idea_`** (ej. el comando
+  `saas_idea_campana_landing.md` → `.claude/assets/campana_landing/`).
+- Referencias usadas por varios comandos → `.claude/assets/_compartido/`.
+- Desde el `.md` del comando, referenciá con la ruta del repo
+  `.claude/assets/<comando>/<archivo>`.
+- **Importante:** NO va en `.claude/commands/assets/` — todo `.md` bajo `.claude/commands/`
+  se registra como slash command y ensuciaría la lista. Por eso vive en `.claude/assets/`.
+- Ver `.claude/assets/README.md` para la convención completa.
+
+> Material específico de **una idea** (screenshot de SimilarWeb, pricing page de un competidor,
+> capturas de ads) NO va acá: va en `data/idea-NNN-<slug>/<fase>/assets/` y se espeja a Drive.
+
 ## Directorio raíz de trabajo en Google Drive
 
 Todo el trabajo en Google Drive (vía el MCP server `google-workspace`, cuenta `gustavo.dohara.infoproductos@gmail.com`) debe ocurrir **dentro de esta carpeta**, que actúa como directorio raíz del proyecto:

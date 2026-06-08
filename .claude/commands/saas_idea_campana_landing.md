@@ -9,7 +9,7 @@ Eres un **coach de validación con landing page**, experto en el método de **Ro
 
 > Este comando NO reemplaza a `/saas_idea_validar_20h` — lo **profundiza**. El de 20h decide *qué* approach usar y fija la filosofía (Curse of the audience, Mom Test, dos approaches, umbrales generales). **Este** es el **motor del Approach 2**: convierte "armar una landing y ver si funciona" en un **sistema** con guías de copy, ejemplos reales, métricas de éxito y un ritual de iteración. El **Approach 1** (hablar con gente) tiene su propio motor en `/saas_idea_campana_llamadas`. Rob hace **ambos** en casi todo lo que lanzó; este approach **no reemplaza** las conversaciones, las complementa.
 
-> **Convención de fuentes (importante en un comando "cero supuestos").** Lo que sigue mezcla el **método de Rob Walling tal como lo explica en el video de la landing del "20"** con **scaffolding** para integrarlo a tu sistema. Lo que **NO sale de este video** lo marco inline con *〔no está en el video〕* + de dónde viene (extrapolación coherente con Walling / otro comando / framework general). Lo no etiquetado es del video. Aclaración global: **toda la maquinaria de tableros, espejo a Drive y la hoja de cálculo de tracking es scaffolding del sistema** (igual que en `/saas_idea_campana_llamadas`), no parte del video — eso no lo re-etiqueto en cada aparición.
+> **Convención de fuentes (importante en un comando "cero supuestos").** Lo que sigue mezcla el **método de Rob Walling tal como lo explica en el video de la landing del "20"** con **scaffolding** para integrarlo a tu sistema. Lo que **NO sale de este video** lo marco inline con *〔no está en el video〕* + de dónde viene (extrapolación coherente con Walling / otro comando / framework general). Lo no etiquetado es del video. Aclaración global: **toda la maquinaria de tableros, espejo a Drive y la hoja de cálculo de tracking es scaffolding del sistema** (igual que en `/saas_idea_campana_llamadas`), no parte del video — eso no lo re-etiqueto en cada aparición. **Hay además una tercera fuente** acotada a la sección "CÓMO ESCRIBIR EL COPY": la demo de copywriting de **Liana Patch (Punchline Copy)**, también marcada inline y respaldada por los archivos de `.claude/assets/campana_landing/`.
 
 ## La idea central que ordena todo
 
@@ -137,6 +137,27 @@ Usalos para ilustrar cada estilo. Todos son SaaS reales que existieron:
 | **Buffer** (smoke test, ~2010) | Smoke test (paradigma viejo) | Botón "planes y precios" como si el producto existiera → al clickear: "nos agarraste antes de tiempo, estamos terminando Buffer" + opt-in. **Hoy NO es el estándar:** las audiencias son zarpadas y pueden sentirse engañadas. No es un "hard pass", pero no lo recomendamos por default. |
 
 **Lectura para el fundador:** las landings mínimas (SwipeWell, Transistor) se arman en 30 min y alcanzan. Los manifiestos (Level, Tuple) requieren estar muy opinado y son más "construir lista" que "validar". El campo extra de Setup ("¿por qué te interesa?") es un truco barato y poderoso para **calificar** la lista y esquivar la curse of the audience.
+
+---
+
+## CÓMO ESCRIBIR EL COPY — proceso de redacción (Liana Patch / Punchline Copy)
+
+*〔Fuente distinta del video de Walling. Es la demo de copywriting de **Liana Patch** (conversion copywriter, punchlinecopy.com) grabada para el curso: escribe en vivo, desde cero, la landing de Bump CRM usando solo reseñas de G2/Trustpilot/Reddit. La anatomía de arriba dice **qué** debe decir la landing; este proceso dice **cómo redactarla**. Es complementario, no doctrina de Walling.〕*
+
+> **Referencias en `assets/` (leelas para conducir esta parte):**
+> - `.claude/assets/campana_landing/liana-patch-mvp-landing-copy-demo.md` — transcript organizado de la demo (los 6 pasos, con los ejemplos concretos de Bump CRM).
+> - `.claude/assets/campana_landing/steal-this-process-mvp-landing-page.pdf` — el **template/Google Doc base** de Liana ("Steal This Process"). Es el modelo desde el cual se redacta; proponéselo al fundador para arrancar (no desde una hoja en blanco).
+
+Mantra que ordena la redacción: **"nada es permanente, todo es draft"** — es un MVP, va a cambiar; no te trabes buscando la frase perfecta. El proceso, en 6 pasos:
+
+1. **No empieces de cero + ponete claro sobre el objetivo.** Arrancá del template (PDF de arriba), no de una hoja en blanco. **Entrevistá al fundador como founder** (por qué hizo el producto, qué dolores resuelve) en frases cortas, y fijá **UN solo lector** (si el mercado es horizontal, lo que **unifica** a todos: tamaño de equipo, objetivo, cómo se autodescriben). Esto se solapa con el **Setup** ya guardado — reusá el ICP/problema de ahí.
+2. **Research + review mining (robá el lenguaje pegajoso).** Esto es **trabajo del agente** y encaja con la regla CERO SUPUESTOS: el mejor copy **no se inventa, se roba** de palabras reales. Minás reseñas de competidores en **G2 / Trustpilot / Reddit** (y, si existen, las **citas reales de las llamadas del Approach 1** — ver `campana-llamadas.md`). Reglas: fijate **quién** deja la reseña (¿es el ICP?); **robá la oración completa** (no fragmentos sueltos — perdés contexto); clasificá en **pains / desires / action drivers**; cuando una frase se repite entre competidores llevá un **tally** (`x2`, `x3`) — es señal de lenguaje real del cliente; marcá los **candidatos a headline**; priorizá **idioms concretos** ("falls through the cracks", "piece of cake"). **Siempre con fuente** (cero supuestos: si es de un competidor, citá cuál).
+3. **Estructurá antes de escribir — Problem · Agitation · Solution (PAS).** Mapeá el esqueleto primero. *Problem:* junta los pains. *Agitation:* "no solo eso, encima…" + cuantificá el costo del dolor. *Solution:* tu producto, en una línea ("streamlined, just what you need, none of what you don't — para [tu 1 lector]"). PAS es el default para el cuerpo / sales letter.
+4. **Draft rápido, formateado como la página.** Formateá el doc para que **se vea como la landing** (`H1`, `H2`, `CTA`, secciones) y dejá **placeholders** para imágenes y social proof. **Hacé coincidir cada testimonial con la etapa del lector** (cerca del problema, un testimonial del problema). CTA específica ("Start your free 14-day trial" > "Sign up") y **click-trigger copy** humano bajo el botón. **Timer de 1 hora, sin auto-editar** — sacá todo. *ChatGPT* sirve de ayudante (dale el research y el marco PAS), **pero el research lo hacés vos** o no distinguís qué es relleno. ⚠️ **Recordá la regla del comando:** en la landing de **validación** todavía **NO van screenshots** (validás el problema) — el consejo de Liana sobre cómo mostrar screenshots aplica recién cuando enseñás producto.
+5. **Editá con dos tests + especificidad.** **3-foot test:** alejate (o pintá CTAs y social proof de colores distintos) y mirá si se entiende qué dice y qué pide, y si las CTAs/proof están bien distribuidas. **Mom test:** ¿tu mamá entiende qué vendés? Y **reemplazá frases-paraguas por lo concreto** que robaste: "saves time" → "saves one SDR ~95 minutes a week". Si no podés **imaginar** el problema en la vida de alguien, es demasiado vago.
+6. **Soltá.** Caminá y volvé con ojos frescos, pedí feedback (ej. comunidad MicroConf), y **lanzala fea** — mejor publicar imperfecto que retener una semana. Es un MVP, va a iterar (engancha directo con la sección **ITERAR**).
+
+> **Cómo lo usás en la conducción:** cuando llegue el momento de redactar el copy (tras el Setup), seguí estos 6 pasos. El paso 2 (review mining) es **tu** trabajo de research — traé las frases reales con su fuente y proponé H1/H2/cuerpo construidos a partir de ellas; el fundador aporta su voz/ángulo y aprueba. Guardá los swipes (frases robadas + fuente) en el tablero junto al copy.
 
 ---
 
@@ -288,6 +309,13 @@ _Landing en vivo: <URL del dominio, si existe>_
 ## Insumos heredados (de prevalidacion.md / campana-llamadas.md)
 - Comprador / canal / competidores / dónde está la gente: ...
 - Citas reales del dolor (para el copy): ...
+
+## Swipes — review mining (frases reales robadas, CON FUENTE)
+> Del proceso de Liana Patch (ver `.claude/assets/campana_landing/`). Oración COMPLETA + fuente. Llevá tally de las que se repiten.
+- Pains: "<frase>" — <fuente: G2/Trustpilot/Reddit/llamada> (x_)
+- Desires: "<frase>" — <fuente>
+- Action drivers: "<frase>" — <fuente>
+- Candidatos a headline: "<frase>" — <fuente>
 
 ## Copy de la landing (lo redacta el agente, lo aprueba el fundador)
 ### H1 (headline — problema + para quién)
