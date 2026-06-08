@@ -27,6 +27,9 @@ Conduce la **validación de campo de ~20 horas** (la "20" del framework), ya sin
 ### `/saas_idea_campana_landing`
 **Motor operativo del Approach 2** (landing page + tráfico): cómo debe verse y qué debe decir una buena landing de validación (H1 que nombra el problema + para quién, H2 de diferenciación, CTA de captura de email), ejemplos reales (SwipeWell, Transistor, Setup, Level, Tuple, Buffer), cuándo conviene un sales letter/manifiesto, por qué NO poner screenshots todavía, cómo leer las métricas de éxito (volumen + % de opt-in) y cómo iterar headline/canal. Trae un template de hoja de cálculo. Escribe `campana-landing.md`.
 
+### `/saas_idea_evaluar_ia`
+Comando de la **Fase 200 (build)**: evalúa **si y cómo** incorporar IA a tu SaaS, basado en la entrevista de **Arvid Kahl** (PodScan.fm) en el curso de Rob Walling. Primero hace el **gate honesto** —*¿IA es siquiera el approach correcto, o estás "espolvoreando IA" porque está de moda?* (tener un problema NO obliga a resolverlo con IA)— y si la respuesta es sí, recorre los **16 riesgos/landmines de Arvid** agrupados (abuso/costo, observabilidad/control, calidad del output, relacionales y legales), puntuando severidad para TU solución concreta y dejando una mitigación accionable por cada uno. Cierra con un veredicto de **build-readiness** y un registro de riesgos. NO inventa tu stack, presupuesto ni régimen de compliance: te los pide. Escribe `2-build_phase/evaluacion-ia.md`.
+
 ### `/saas_idea_sync_drive`
 Utilitario transversal que **sincroniza Google Drive → `data/`** (el camino inverso del espejo). Recorre cada idea y fase, compara cada Google Doc del Drive contra su `.md` local normalizando el ruido de la conversión Doc↔Markdown, clasifica el estado de cada par (en sync / solo en Drive / solo local / difieren) y, ante cualquier inconsistencia, te avisa con el diff y te deja decidir. NUNCA crea, sobreescribe ni borra nada sin tu confirmación explícita.
 
@@ -47,11 +50,12 @@ data/
     │   ├── validacion-campo.md
     │   ├── campana-llamadas.md
     │   └── campana-landing.md
-    ├── 2-build_phase/                        ← fase de construcción del MVP (las ~200h) — aún sin comandos
+    ├── 2-build_phase/                        ← fase de construcción del MVP (las ~200h)
+    │   └── evaluacion-ia.md                  ← (solo si el MVP usa IA)
     └── 3-launch_phase/                       ← fase de lanzamiento — aún sin comandos
 ```
 
-La estructura es **una carpeta por idea**; dentro, una subcarpeta por fase. Los archivos de la fase de idea conviven en `1-idea_phase/`. Las carpetas `2-build_phase/` y `3-launch_phase/` existen como placeholders (con `.gitkeep`) para las fases siguientes; todavía **ningún comando escribe en ellas**.
+La estructura es **una carpeta por idea**; dentro, una subcarpeta por fase. Los archivos de la fase de idea conviven en `1-idea_phase/`. La carpeta `2-build_phase/` ya tiene su primer comando (`/saas_idea_evaluar_ia` → `evaluacion-ia.md`, que se escribe solo si el MVP incorpora IA); `3-launch_phase/` sigue siendo un placeholder (con `.gitkeep`) para la fase de lanzamiento, donde todavía **ningún comando escribe**.
 
 ### Archivos — qué comando escribe cada uno y qué guarda
 
@@ -64,6 +68,7 @@ La estructura es **una carpeta por idea**; dentro, una subcarpeta por fase. Los 
 | `1-idea_phase/validacion-campo.md` | `/saas_idea_validar_20h` | Tablero de la validación de campo de ~20h: approach elegido, dónde está la gente, outreach, preguntas del Mom Test y resultados reales (yeses, opt-ins, citas). Consolida los dos motores operativos. |
 | `1-idea_phase/campana-llamadas.md` | `/saas_idea_campana_llamadas` | Sub-tablero del Approach 1: setup de campaña, cadencia, guiones, banco de preguntas, game tape y resultados (respuestas, % con el problema, yeses calificados, cheques de pre-venta). |
 | `1-idea_phase/campana-landing.md` | `/saas_idea_campana_landing` | Sub-tablero del Approach 2: copy (H1/H2/CTA), versiones probadas, plan de tráfico, ritual de iteración y métricas reales (visitas, opt-ins, % por canal). |
+| `2-build_phase/evaluacion-ia.md` | `/saas_idea_evaluar_ia` | Tablero de la Fase 200 (build) para soluciones con IA: gate "¿IA es el approach correcto?", registro de los 16 riesgos de Arvid Kahl con su mitigación/decisión, bloqueantes y veredicto de build-readiness. Solo se crea si el MVP incorpora IA. |
 
 ---
 
@@ -84,12 +89,14 @@ El **tablero maestro `/saas_idea_validar_2_20_200`** orquesta las fases 2 y 20 p
         │              └─ Approach 2 → /saas_idea_campana_landing  → campana-landing.md
         │                                                          ── gate 🟢/🟡/🔴 ─┐
         └─ Fase 200 → construir el MVP (~200h) ←───────────────────────────────────┘ (solo construís si 🟢)
+                       └─ (si el MVP usa IA) → /saas_idea_evaluar_ia → evaluacion-ia.md
 ```
 
 - **Empezá por `/saas_idea_encontrar_idea`** si todavía no tenés una idea concreta. Si ya la tenés, podés saltar directo.
 - **`/saas_idea_validar_idea`** es un filtro opcional de escritorio: úsalo para matar rápido las ideas flojas antes de invertir las ~2h de pre-validación.
 - **A partir de la pre-validación, dejá que `/saas_idea_validar_2_20_200` conduzca:** él invoca `prevalidar_2h` (Fase 2) y `validar_20h` (Fase 20), y respeta los gates —no avanzás a la fase siguiente si el veredicto no es 🟢—. Cada comando de fase también puede correrse standalone si preferís.
 - **Dentro de la Fase 20**, Rob recomienda hacer **los dos approaches**: las conversaciones (`campana_llamadas`) y la landing (`campana_landing`) se complementan y se calibran entre sí.
+- **En la Fase 200, si el MVP incorpora IA**, corré `/saas_idea_evaluar_ia` antes/mientras construís la parte de IA: primero te hace el gate "¿IA es siquiera el approach correcto?" (tener un problema no obliga a usar IA) y después te pasa por los 16 riesgos de Arvid Kahl. Si el MVP no usa IA, salteálo.
 - **`/saas_idea_sync_drive`** es transversal: corrélo cuando hayas editado los Docs directamente en Drive y quieras traer esos cambios de vuelta a `data/`.
 
 > **Regla que atraviesa todo el método:** se escala la inversión de horas solo cuando la señal lo justifica (2 → 20 → 200), no se inventan datos (si no hay dato real, se pide y se pausa), y no se escribe una línea de código hasta pasar el gate de la Fase 20.

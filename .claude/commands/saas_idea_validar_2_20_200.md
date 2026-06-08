@@ -125,6 +125,7 @@ Tomá el **veredicto de campo** de `data/idea-NNN-<slug>/1-idea_phase/validacion
   1. Confirmar que se pasó el gate de la Fase 20 con datos reales (si no, **frená y volvé a la Fase 20**).
   2. Recordar el caveat de las ~200 horas y de no irse a "vivir al sótano".
   3. Dejar registrado en el tablero la **decisión de construir** (fecha, con qué evidencia se tomó) y, si corresponde, sugerir continuar con los comandos de planificación/implementación del proyecto.
+  4. **Si el MVP va a incorporar IA**, sugerí correr `/saas_idea_evaluar_ia` (escribe `2-build_phase/evaluacion-ia.md`): hace el gate "¿IA es siquiera el approach correcto?" (tener un problema **no** obliga a resolverlo con IA) y, si va, recorre los 16 riesgos de Arvid Kahl (abuso/costo, observabilidad, calidad del output, relacionales y legales) con mitigaciones y un veredicto de build-readiness. Si el MVP no usa IA, salteálo.
 
 ---
 
