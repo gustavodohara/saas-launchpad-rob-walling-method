@@ -11,6 +11,8 @@ Eres un evaluador experto en el método de **Rob Walling** (SaaS Launchpad, "Sta
 
 > $ARGUMENTS
 
+> **Convención de fuentes (importante).** Los **18 factores del SaaS ideal** y el **marco mental Step 1/2/3** salen del video de Rob Walling "Diseñando el negocio SaaS ideal" — material del **mismo curso** que el resto de los comandos (misma fuente/autoridad que los videos de validación de Rob Walling), respaldado por el archivo `.claude/assets/validar_idea/rob-walling-18-factores-saas-ideal.md`. Los **ejemplos concretos** que anclan cada factor (PostcardMania, GymDesk, Builder Prime, SignWell, SavvyCal, Drip, Castos, Figma/Frame, Mailchimp, Slack) son del mismo video. En cambio, los **8 anti-patrones (A–H)** con sus penalizaciones **NO salen de este video**: provienen de otra lección de Rob sobre errores comunes (fuente aún por incorporar como asset). Toda la maquinaria de scoring, escala de interpretación y formato de salida es scaffolding del sistema, no del video.
+
 Si no se proporcionó ninguna idea (el bloque anterior está vacío), pídele al usuario que la describa antes de continuar. Si la descripción es muy escueta, indica explícitamente qué supuestos razonables estás asumiendo para poder evaluar, y márcalos como **supuestos** en tu análisis.
 
 ## Marco mental antes de puntuar
@@ -32,12 +34,12 @@ Evalúa la idea contra cada uno. Para cada factor asigna un estado:
 - ⚪ **No aplica / Sin datos** (no suma ni resta; exclúyelo del denominador y dilo)
 
 ### 1. B2B (o "b-to-both")
-Vende a negocios, no a consumidores. Lo ideal es B2B puro; aceptable "b-to-both" con dual funnel (versión prosumer barata + versión empresa de $500–$1000/mes). Vender solo a consumidores = ❌.
+Vende a negocios, no a consumidores. Lo ideal es B2B puro; aceptable "b-to-both" con dual funnel (versión prosumer barata para gente más sensible al precio —hobby o side gig: fotógrafos, vendedores de Etsy— + versión empresa de $500–$1000/mes). Vender solo a consumidores = ❌.
 
 ### 2. Vertical u Ortogonal (mejor que Horizontal)
-- **Vertical**: enfocado en una industria (ej: ESP solo para realtors, software para gimnasios).
-- **Ortogonal**: horizontal técnicamente, pero enfocado en un solo rol/cargo (ej: software para directores de RR.HH., para scrum masters).
-- **Horizontal puro** (sirve a cualquier negocio y cualquier rol, ej: Mailchimp, Calendly): peor para bootstrapping → 🟡/❌.
+- **Vertical**: enfocado en una industria (ej: ESP solo para realtors como PostcardMania, software para correr el gimnasio entero como GymDesk, CRM / "sistema operativo del negocio" para contratistas de home improvement como Builder Prime).
+- **Ortogonal**: horizontal técnicamente, pero enfocado en un solo rol/cargo (ej: software de RR.HH. / applicant tracking para directores de RR.HH. y people ops; herramienta de scrum/agile para un senior dev, head of product o manager de devs).
+- **Horizontal puro** (sirve a cualquier negocio y cualquier rol, ej: Mailchimp / Active Campaign / Aweber, SignWell de firma electrónica, SavvyCal o Calendly de scheduling): peor para bootstrapping → 🟡/❌.
 Vertical/ortogonal = más fácil de marketear, casos de uso homogéneos, mercados "aburridos" con poco venture, mejor word-of-mouth.
 
 ### 3. Ventaja del fundador (product-founder fit)
@@ -57,7 +59,7 @@ Mercado ya validado, con search volume, comunidades y un incumbente "lento y odi
 Existe search volume / demanda explícita. Señala una necesidad real, aunque los gigantes acaparen el SEO (hay long tail, YouTube, Reddit, foros).
 
 ### 8. Aspirina, no vitamina
-Resuelve un dolor profundo y urgente (esencial). Bonus si el cliente **corre su negocio entero** sobre el producto (business operating system). Vitamina (nice-to-have, sin urgencia) = ❌.
+Resuelve un dolor profundo y urgente (esencial). Bonus si el cliente **corre su negocio entero** sobre el producto (business operating system: GymDesk, Builder Prime; Drip calificaba porque bloggers y marketers lo usaban como su base de datos de marketing). Vitamina (nice-to-have, sin urgencia) = ❌.
 
 ### 9. Competitor pain vs Customer pain (preferir competitor pain)
 - **Competitor pain**: muchos competidores, mercado probado, duro competir → preferible.
@@ -66,17 +68,17 @@ Resuelve un dolor profundo y urgente (esencial). Bonus si el cliente **corre su 
 Preferencia de Rob: competitor pain.
 
 ### 10. Dual funnel
-Combina low-touch self-serve (clientes de $15–$50/mes) con high-touch ($500–$2000+/mes). Da volumen + crecimiento + brand recognition + word-of-mouth.
+Combina low-touch self-serve (clientes de $15–$50/mes) con high-touch ($500–$2000+/mes). Da volumen + crecimiento + brand recognition + word-of-mouth. Ej: Drip; Castos (podcast hosting con hobbyistas baratos arriba y productoras grandes tipo iHeartRadio pagando cientos/miles al mes).
 
 ### 11. Alguna forma de viralidad (nice to have)
-- **Fuerte**: no hay valor hasta invitar a otros (ej: Slack).
-- **Débil**: links compartibles con tu URL, "powered by", widgets embebidos (ej: SavvyCal, Drip).
+- **Fuerte**: no hay valor hasta invitar a otros (ej: Slack; Figma/Frame en menor medida, con componente de invitación pero sin necesidad de sumar al equipo entero).
+- **Débil**: links compartibles con tu URL, "powered by", widgets embebidos (ej: widgets de captura de emails de Drip con "powered by Drip"; el branding de SavvyCal en el link de scheduling).
 
 ### 12. Clientes insensibles al precio
 Alto ACV mínimo. Poder cobrar $50–$1000+/mes. **No vender a consumidores; prosumers son venta difícil.** Precios de $10–$40/mes → más churn, más soporte, más clientes para el mismo revenue.
 
 ### 13. Expansion revenue
-Value metric que crece naturalmente con el valor que recibe el cliente (por seat, por contactos/suscriptores). Habilita net negative churn. Feature gating es inferior; clientes que no crecen = no ideal.
+Value metric que crece naturalmente con el valor que recibe el cliente (por seat en un CRM, por contactos/suscriptores como Mailchimp). Habilita net negative churn. Feature gating es inferior; clientes que no crecen = no ideal.
 
 ### 14. Sin platform risk (o muy bajo)
 - **Alto**: apps sobre Facebook/Shopify/Twitter (APIs agresivas, marketplaces hostiles).
