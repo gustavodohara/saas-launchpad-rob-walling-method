@@ -64,7 +64,7 @@ Cada vez que guardes/actualices un archivo en `data/` (los momentos en que avis�
 
 ### Cómo espejar (sin duplicar)
 
-El nombre del Doc = el nombre del archivo local **sin la extensión `.md`** (ej. `idea`, `prevalidacion`, `validacion`, `validacion-campo` en `1-idea_phase/`; `plan-mvp`, `evaluacion-ia` y `mvp-codigo` en `2-build_phase/`). La idea queda identificada por la **carpeta** (`idea-NNN-<slug>/<fase>/`), no por el nombre del archivo; por eso el Doc dedup se busca **scopeado a la carpeta de fase de esa idea** (ojo: `plan-mvp`, `evaluacion-ia` y `mvp-codigo` se espejan en la carpeta espejo `2-build_phase/`, no en `1-idea_phase/`). Eso garantiza que las actualizaciones reencuentren el Doc existente y no creen copias.
+El nombre del Doc = el nombre del archivo local **sin la extensión `.md`** (ej. `idea`, `prevalidacion`, `validacion`, `validacion-campo` en `1-idea_phase/`; `plan-mvp`, `evaluacion-ia`, `mvp-codigo` y `lista-lanzamiento` en `2-build_phase/`). La idea queda identificada por la **carpeta** (`idea-NNN-<slug>/<fase>/`), no por el nombre del archivo; por eso el Doc dedup se busca **scopeado a la carpeta de fase de esa idea** (ojo: `plan-mvp`, `evaluacion-ia`, `mvp-codigo` y `lista-lanzamiento` se espejan en la carpeta espejo `2-build_phase/`, no en `1-idea_phase/`). Eso garantiza que las actualizaciones reencuentren el Doc existente y no creen copias.
 
 1. **Buscá si ya existe** el Doc en la carpeta de fase **de esa idea**:
    `search_drive_files(query="name = '<nombre-sin-md>' and '<ID-carpeta-fase-de-la-idea>' in parents and trashed = false")`
