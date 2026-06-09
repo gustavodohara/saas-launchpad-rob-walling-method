@@ -11,7 +11,7 @@ Eres un evaluador experto en el método de **Rob Walling** (SaaS Launchpad, "Sta
 
 > $ARGUMENTS
 
-> **Convención de fuentes (importante).** Los **18 factores del SaaS ideal** y el **marco mental Step 1/2/3** salen del video de Rob Walling "Diseñando el negocio SaaS ideal" — material del **mismo curso** que el resto de los comandos (misma fuente/autoridad que los videos de validación de Rob Walling), respaldado por el archivo `.claude/assets/validar_idea/rob-walling-18-factores-saas-ideal.md`. Los **ejemplos concretos** que anclan cada factor (PostcardMania, GymDesk, Builder Prime, SignWell, SavvyCal, Drip, Castos, Figma/Frame, Mailchimp, Slack) son del mismo video. En cambio, los **8 anti-patrones (A–H)** con sus penalizaciones **NO salen de este video**: provienen de otra lección de Rob sobre errores comunes (fuente aún por incorporar como asset). Toda la maquinaria de scoring, escala de interpretación y formato de salida es scaffolding del sistema, no del video.
+> **Convención de fuentes (importante).** Los **18 factores del SaaS ideal** y el **marco mental Step 1/2/3** salen del video de Rob Walling "Diseñando el negocio SaaS ideal" — material del **mismo curso** que el resto de los comandos (misma fuente/autoridad que los videos de validación de Rob Walling), respaldado por el archivo `.claude/assets/validar_idea/rob-walling-18-factores-saas-ideal.md`. Los **ejemplos concretos** que anclan cada factor (PostcardMania, GymDesk, Builder Prime, SignWell, SavvyCal, Drip, Castos, Figma/Frame, Mailchimp, Slack) son del mismo video. En cambio, los **8 anti-patrones (A–H)** **NO salen de ese video**: provienen de la lección de Rob "10 errores comunes de ideas a evitar", respaldada por `.claude/assets/validar_idea/rob-walling-10-errores-comunes.md`. Ese video lista 10 errores; dos de ellos —**B2C** y **platform risk**— ya están cubiertos en los factores 1 y 14, por lo que solo los **8 restantes** se vuelven anti-patrones A–H. Los **valores de penalización** (−15/−12/−10/…) son criterio del sistema, no del video. Toda la maquinaria de scoring, escala de interpretación y formato de salida es scaffolding del sistema, no de las fuentes.
 
 Si no se proporcionó ninguna idea (el bloque anterior está vacío), pídele al usuario que la describa antes de continuar. Si la descripción es muy escueta, indica explícitamente qué supuestos razonables estás asumiendo para poder evaluar, y márcalos como **supuestos** en tu análisis.
 
@@ -107,19 +107,19 @@ Además de los 18 factores positivos, Rob Walling enumera **errores comunes** (s
 Para cada anti-patrón, detéctalo solo si la idea claramente cae en él; respeta las **excepciones** que el propio Rob menciona (si aplica la excepción, no penalices o reduce la penalización y dilo).
 
 ### A. Marketplace de dos lados (−15)
-Producto que hace matchmaking entre oferta y demanda (tipo Uber, DoorDash, Angie's List). Estás peleando una guerra en **dos frentes**: dos productos, dos clientes, dos motores de marketing. Extremadamente difícil de bootstrapear.
-- **Excepción**: si el fundador ya tiene acceso/audiencia de **un lado** del mercado (o ambos), reduce a −5 o anula la penalización y explícalo.
+Producto que hace matchmaking entre oferta y demanda (tipo Uber, DoorDash, Instacart, Angie's List). Estás peleando una guerra en **dos frentes**: dos productos, dos clientes, dos motores de marketing. Extremadamente difícil de bootstrapear (Rob conoce ≤5 casos exitosos; uno lo describió como "comer vidrio").
+- **Excepción**: si el fundador ya tiene acceso/audiencia de **un lado** del mercado (o ambos), reduce a −5 o anula la penalización y explícalo. Ej: TinySeed (Rob tenía ambos lados, fundadores e inversores); Credo de John Doherty (tenía una red de dueños de agencias).
 
 ### B. Negocio venture-scale / red social / network effect (−15)
-Intentar lanzar algo que solo es viable con miles o cientos de miles de usuarios: "Facebook para X", plataformas sociales, productos donde con 5 usuarios no hay valor. No bootstrappeable.
+Intentar lanzar algo que solo es viable con miles o cientos de miles de usuarios: "Facebook para X" (ej: "Facebook para dueños de perros"), plataformas sociales, productos donde con 5 usuarios no hay valor (network effect) y que solo cierran financieramente con cientos de miles/millones porque son ad-supported. No bootstrappeable.
 - **Excepción**: si cobra suscripción mensual desde el día 1 **y** el fundador tiene audiencia para sembrar la red, reduce la penalización.
 
 ### C. Puramente ad-supported (−15)
-Monetizar con publicidad en vez de cobrarle al que recibe el valor. A la escala de un bootstrapper (miles de pageviews/mes) los ads generan calderilla. Si el plan de monetización son ads → bandera roja.
+Monetizar con publicidad en vez de cobrarle al que recibe el valor. A la escala de un bootstrapper (miles de pageviews/mes) los ads generan calderilla (Rob: un SaaS con ~1–2k pageviews/mes habría hecho "$5" con ads). Si el plan de monetización son ads → bandera roja.
 
 ### D. Cobrar solo un % de fee / GMV / volumen, sin suscripción (−12)
-Vivir solo de un porcentaje de las transacciones (tipo Stripe 2.9%) requiere volumen gigante; a baja escala no da revenue decente. Receta de fracaso si es el **único** modelo.
-- **Excepción / no penalizar**: si cobra una **suscripción mensual + un % encima como value metric** (modelo Shopify), eso es bueno → no penaliza (refuerza el Factor 13).
+Vivir solo de un porcentaje de las transacciones (tipo Stripe 2.9%) requiere volumen gigante; a baja escala no da revenue decente. Receta de fracaso si es el **único** modelo (Shopify arrancó así y pivoteó; Gumroad pasó de solo-% a suscripción).
+- **Excepción / no penalizar**: si cobra una **suscripción mensual + un % encima como value metric** (modelo Shopify actual), eso es bueno → no penaliza (refuerza el Factor 13).
 
 ### E. Falta de foco — "lanzar muchos productos a ver qué pega" (−10)
 Estrategia de tirar un producto nuevo por mes/trimestre esperando que alguno prenda, en vez de profundizar en una idea hasta product-market fit. No se aprende, no se itera, es apostar a la suerte. Marca esto si la "idea" en realidad es un portafolio disperso o el usuario expresa esta mentalidad.
@@ -133,7 +133,7 @@ Pensar que "primero construyo audiencia en redes y luego le vendo el SaaS". Las 
 
 ### H. Retrasar el revenue (−8)
 Empujar el ingreso hacia el futuro, letal sin funding. Dos formas típicas:
-- **Comping for life** a los primeros 10–30 usuarios (early access gratis para siempre) → justo los más dispuestos a pagar.
+- **Comping for life** a los primeros 10–30 usuarios (early access gratis para siempre) → justo los más dispuestos a pagar. Alternativa de Rob: que paguen full price **+ algo extra** (un servicio/videos que normalmente cobrás); un descuento de 1 año es aceptable pero "lazy".
 - **Freemium** (plan gratis para siempre) usado por inexperiencia ("nadie usa mi producto, lo hago gratis"). Dropbox convertía ~3% al año; solo funciona con mucha experiencia/capital.
 - **No penalizar**: free trial limitado por tiempo o uso (7/14/21 días con tarjeta) está perfecto. La penalización es por **freemium permanente o comping for life**, no por free trials. Si dudas, di que es "samurai sword": peligroso sin experiencia.
 
