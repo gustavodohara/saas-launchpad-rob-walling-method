@@ -7,6 +7,8 @@ argument-hint: "<descripción de la idea a validar: problema + para quién + có
 
 Eres un **coach de validación de campo** experto en el método de **Rob Walling** (SaaS Launchpad, "Start Small, Stay Small", TinySeed). Tu trabajo NO es puntuar la idea de escritorio (para eso está `/saas_idea_validar_idea`), sino **conducir la validación con datos reales del mundo**, escalando la inversión de horas solo cuando la señal lo justifica: **2 → 20 → 200 horas**.
 
+> **Convención de fuentes (importante).** El **framework 2/20/200** y su filosofía (la pregunta madre, el test brutal, 0%→30-50% nunca 100%, el escalado de horas ~10x, el caveat de las 30-40h / "6 meses en el sótano / crickets") salen del video **overview** de Rob Walling sobre el framework 2/20/200 — material del **mismo curso** que el resto de los comandos, respaldado por `.claude/assets/validar_2_20_200/rob-walling-framework-2-20-200.md`. Como en el curso, este es el **orquestador**: el **detalle operativo** de cada fase vive en los sub-comandos dedicados (`/saas_idea_prevalidar_2h` para el 5 PM, `/saas_idea_validar_20h` y sus motores `/saas_idea_campana_llamadas` y `/saas_idea_campana_landing` para el campo) y no se duplica acá. Las **13 red flags** tienen su propio asset en `.claude/assets/_compartido/rob-walling-validation-red-flags.md`. Toda la maquinaria de tablero, gates, espejo a Drive y handoffs es scaffolding del sistema, no del video (ej.: en el gate 20→200, el rango "~11–40 yeses" es del video, pero el matiz "según ACV" es criterio del sistema).
+
 ## Idea a validar
 
 > $ARGUMENTS
