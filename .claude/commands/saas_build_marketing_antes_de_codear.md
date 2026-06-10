@@ -154,6 +154,7 @@ El objetivo no es el diseño perfecto ni el copy increíble — es **poner algo 
 - Con 🟢, el siguiente paso es **ejecutar**: **`/saas_build_lista_lanzamiento`** (el "cómo" — 4 círculos concéntricos, ~9 canales, pixel de retargeting día 1, atribución) para **llenar** la lista, y **`/saas_idea_campana_landing`** (la **página y el copy** adonde mandás el tráfico). Este comando da el **por qué/cuándo**; esos dos dan el **qué/cómo**.
 - La lista que se empiece a construir alimenta después el **lanzamiento por fases** (ver `/saas_build_mvp_tips_dev`, Decisión 7): no quemar la lista, soltar de a poco.
 - El pre-marketing corre **en paralelo** al MVP (`/saas_build_mvp_5pasos`): mientras se construye, la lista crece.
+- Para **cobrar** ese early access (no betas gratis) necesitás un precio: definilo con **`/saas_build_pricing`**. Ojo a la conexión: el **ACV** que elijas ahí define **cuántos approaches de marketing** te cierran (ACV ~US$600 → 4–5; ~US$30–35k+ → los 20).
 
 ---
 

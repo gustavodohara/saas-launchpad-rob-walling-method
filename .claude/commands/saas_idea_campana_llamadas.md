@@ -198,6 +198,8 @@ Cuando hay patrón, **subí la apuesta a la moneda real**. Buckingham: en B2B Sa
 3. **Cobrar de verdad**, con **garantía de devolución** si no entregan. Buckingham cobró los cheques; cuando una clienta dejó su trabajo de placement, le devolvieron la plata → cerró con **4 clientes iniciales de 5 cheques**.
 4. **La barra: 5 cheques, no 1.** "Hay suficiente gente que es tonta con su plata como para que 1 o 2 cheques no prueben nada." Querés el **promedio**, no un outlier.
 
+> **¿Con qué precio pre-vendés?** El monto del cheque (los $500–1.000 de Buckingham fueron de su caso) sale de tu pricing. Si todavía no le pusiste un primer precio al producto, corré **`/saas_build_pricing`** antes de pedir el compromiso (estructura, rango por motion de venta, value metric, tiers) — y recordá la regla de Rob: **casi todos subvalúan; inclinate alto** (*si nadie te dice que estás caro, estás barato*). El precio que la gente **acepta pagar acá** es señal de oro y vuelve a alimentar ese pricing.
+
 ### Cautionary tale (por qué 1 no alcanza)
 Un competidor validó su software de placement con **una sola agencia**, que hacía las cosas de un modo **único** que el resto del rubro no usaba. Construyeron a medida de ese cliente, no pudieron venderlo a más nadie, no supieron iterar y **cerraron**. Moraleja: **con 1 cliente sos un consultor a medida, no un SaaS.** Necesitás el promedio de varios (5, 10, 20 según el caso).
 

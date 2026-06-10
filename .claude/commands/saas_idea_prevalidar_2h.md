@@ -95,6 +95,8 @@ Metete en la cabeza de **quien va a pagar** (que puede no ser quien sufre el dol
 - **¿ARPA?** (average revenue per account) Estimá cuánto recurrente por cuenta al mes/año. Afinar esto viene con experiencia del rubro; basate en los precios reales de competidores que encontraste.
 - **Veredicto Pricing:** ¿el espacio ya paga? ¿ARPA plausible? ¿calza como suscripción?
 
+> Acá solo confirmás que **el espacio paga** y que el ARPA es plausible. El **primer precio concreto** (estructura, rango por motion de venta, value metric, tiers) lo definís recién en build con **`/saas_build_pricing`**, que retoma este "Pricing model" y lo operacionaliza.
+
 ### 4. MARKET — el mercado (la M)
 
 Esta es la más larga. Recorré:

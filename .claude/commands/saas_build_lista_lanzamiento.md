@@ -247,6 +247,7 @@ Contadores: **opt-ins acumulados · % por origen (frío/red/audiencia) · costo 
 ### Handoff
 - La lista alimenta el **lanzamiento por fases** (ver `/saas_build_mvp_tips_dev`, Decisión 7): tester #1 elegido a dedo → iterar → recién después emailear a los primeros 50–100 sin **quemar** la lista.
 - Si todavía estás validando, los opt-ins/% **alimentan** `campana-landing.md` / `validacion-campo.md` (Approach 2) — cruzá esta señal con las **conversaciones** (`/saas_idea_campana_llamadas`).
+- **¿A qué precio le ofrecés el early access?** Antes de soltar la lista necesitás un precio (la lección de Rob: **cobrá por el early access, no hagas betas gratis**). Definilo con **`/saas_build_pricing`** (estructura, rango, value metric, tiers) — y ojo: el **ACV** que elijas ahí define **cuántos de los ~9 canales** de esta lista te cierran con ROI positivo (US$600→4–5; US$30k+→los 20).
 
 ---
 
