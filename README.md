@@ -2,6 +2,8 @@
 
 Conjunto de **comandos de Claude** para encontrar, validar, construir y **lanzar** ideas de SaaS siguiendo el método de **Rob Walling** (SaaS Launchpad, "Start Small, Stay Small", TinySeed): el framework de validación **2/20/200** (≈2 horas de research + ≈20 horas de campo + ≈200 horas de MVP) y, después, la **fase de lanzamiento** (el día de lanzamiento y lo que sigue). Todo el trabajo se persiste en Markdown bajo `data/` y se espeja como Google Docs en Drive.
 
+> 🧭 **¿No sabés por dónde empezar o cuál de los 18 comandos correr?** Mirá la [**Guía de uso — ¿qué comando corro?**](GUIA-COMANDOS.md): separa los comandos **principales** (los que iniciás vos) de los **complementarios** (motores, condicionales y transversales).
+
 ---
 
 ## Comandos disponibles (`.claude/commands/`)
