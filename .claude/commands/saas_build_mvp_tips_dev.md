@@ -167,6 +167,7 @@ Preguntá (si no lo trajiste de `plan-mvp.md`, **una a la vez**):
 - **Recién después** de un par de iteraciones, emaileá a los **primeros 50–100**. Sé **muy sensible** a quemar tu lista (1.000–5.000) con algo sin la funcionalidad ni el pulido.
 - **Reclutá deliberadamente** a esos primeros testers (cuesta conseguir gente que ayude a escala, incluso con producto maduro). Es todo **hipótesis educadas** sobre quién será buen candidato.
 - 📝 Registrá: quién es el **tester #1** (de la early-access list), la cadencia de iteración, y el umbral para pasar a 50–100. (Si la early-access list no existe, ⏳ PENDIENTE.)
+- → **Esto es el embrión del lanzamiento por fases.** El **sistema completo** (los dos modelos —5 pasos vs phased launch—, cómo segmentar, las 3 claves, phased launch ≠ beta, el pricing del early access) lo conduce **`/saas_launch_lanzamiento_por_fases`** (Fase 300, launch). Acá solo dejás elegido el **tester #1**; el plan de lanzamiento se arma allá cuando el MVP esté completo y sin bugs.
 
 ---
 

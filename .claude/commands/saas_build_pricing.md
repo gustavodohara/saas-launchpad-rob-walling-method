@@ -162,7 +162,7 @@ Decidí **cómo construís el pricing** (cómo metés expansion revenue, el "Saa
 5. Recordá el encuadre de Rob: **no hay fórmula — es tu mejor guess y vas a iterar; pero el pricing es la palanca más grande. Casi todos subvalúan: inclinate alto, cobrá por el valor (no contra el "gratis"), no corras al fondo, preferí un value metric alineado a la competencia, y armá tiers duplicando y espaciando con un "Call us" enterprise. Si nadie te dice que estás caro, estás barato.** Sos el **freno** contra el subvaluar, no el sí.
 
 ### Handoff
-- El precio definido **alimenta** la **pre-venta** (`/saas_idea_campana_llamadas`, los 5 cheques), el **early access pago** ("cobrá, no betas gratis" — `/saas_build_lista_lanzamiento`) y el **día de lanzamiento**.
+- El precio definido **alimenta** la **pre-venta** (`/saas_idea_campana_llamadas`, los 5 cheques), el **early access pago** ("cobrá, no betas gratis" — `/saas_build_lista_lanzamiento`) y el **día de lanzamiento** (`/saas_launch_lanzamiento_por_fases`, Fase 300: el early access se cobra a **precio completo o descuento leve, sin lifetime comps**).
 - El **copy** de la página de pricing/landing lo conduce `/saas_idea_campana_landing` (este comando da el **número y la estructura**; ese, **cómo se presenta**).
 - El **ACV** elegido acá define el **buffet de marketing** → coordiná con `/saas_build_marketing_antes_de_codear` y `/saas_build_lista_lanzamiento`.
 - Si el MVP usa **IA**, el **costo por unidad** (de `/saas_idea_evaluar_ia`) fija un **piso de margen** que el pricing debe cubrir.
