@@ -1,6 +1,6 @@
 # Guía de uso — ¿qué comando corro?
 
-Esta guía responde una sola pregunta: **de los 18 comandos, ¿cuáles tengo que ejecutar yo y cuáles se corren solos o según el caso?**
+Esta guía responde una sola pregunta: **de los 19 comandos, ¿cuáles tengo que ejecutar yo y cuáles se corren solos o según el caso?**
 
 No repite el detalle de cada comando (eso está en el [`README.md`](README.md) y en cada `.md` de `.claude/commands/`). Acá te decimos **qué es principal y qué es complementario**, para que no te pierdas entre tantos slash commands.
 
@@ -58,6 +58,7 @@ Todo lo demás es **complementario**: lo corrés cuando el principal te lo pida,
 | **`/saas_launch_lanzamiento_por_fases`** | 🟦 **Principal** | Conduce el **lanzamiento** (5 pasos o por fases). Cuando el MVP está completo, la lista nutrida y el precio definido. |
 | **`/saas_launch_fortalecer_pmf`** | 🟦 **Principal** | Conduce el **post-lanzamiento**: hablar con clientes, filtrar requests, medir el PMF. |
 | `/saas_launch_ventas_fundador` | ⬜ Complementario *(motor)* | El **CÓMO** de las ventas high-touch (founder-led sales) que piden el lanzamiento por fases y el fortalecimiento del PMF. |
+| `/saas_idea_icp` | 🟨 Transversal *(panel del ICP)* | Para **ver/corregir** el perfil del comprador. El ICP se **enriquece solo** desde toda la cadena; este comando es el panel (ver, inicializar, re-detectar, fusionar/separar). |
 | `/saas_launch_cuando_abandonar` | 🟨 Transversal *(decisión)* | Cuando **"algo no se siente bien"** y dudás si seguir. Invocable **desde cualquier etapa**. |
 | `/saas_idea_sync_drive` | 🟨 Transversal *(utilitario)* | Cuando editaste los Docs **directo en Drive** y querés traer esos cambios de vuelta a `data/`. |
 
@@ -83,6 +84,7 @@ Todo lo demás es **complementario**: lo corrés cuando el principal te lo pida,
 - **Motor de apoyo:** `/saas_launch_ventas_fundador` para liderar tus ventas high-touch (onboarding 1-a-1, pre-venta, deals de ACV alto).
 
 ### Transversal — en cualquier momento
+- `/saas_idea_icp` para ver o corregir el perfil del comprador (el ICP se va llenando solo desde los demás comandos; este es el panel de control).
 - `/saas_launch_cuando_abandonar` cuando dudás si seguir.
 - `/saas_idea_sync_drive` para sincronizar Drive → `data/`.
 

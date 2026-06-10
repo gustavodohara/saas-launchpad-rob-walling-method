@@ -64,6 +64,7 @@ Al iniciar:
    - `1-idea_phase/campana-landing.md` → si la landing menciona un precio o midió reacción a un precio.
    - `2-build_phase/plan-mvp.md` / `mvp-codigo.md` → features core y approach (insumo para qué **gateás** y cómo segmentás tiers).
    - `2-build_phase/lista-lanzamiento.md` / `premarketing.md` → el ACV elegido acá define el **buffet de marketing**; coordiná.
+   - `1-idea_phase/icp.md` **(ICP — perfil del comprador)** → leelo si existe y **heredá el «para quién»** (no repreguntes el ICP). Este comando **aporta al ICP**: al armar los tiers segmentás clientes, y **acá es donde más probablemente detectás perfiles distintos** (1 o N ICP, ej. un tier por segmento). Cuando un segmento sea en realidad otro comprador, volcalo a `icp.md` con el **Protocolo de ICP de `CLAUDE.md`** — **avisá y pedí confirmación antes de crear un ICP nuevo**, pedí lo que falte (no lo inventes), y el enriquecimiento de un ICP existente va incluido en el «📝 Guardado en el tablero».
 3. Si `2-build_phase/pricing.md` **ya existe**, leelo entero: resumí qué estructura/rango/tiers/value metric quedaron y qué falta. Retomá desde ahí.
 4. Si **no existe**, créalo con la plantilla del final y arrancá por el **Setup**.
 5. **A medida que llega info nueva** (precios de competidores, decisión de estructura, tiers definidos), **actualizá el archivo** en la sección correspondiente, refrescá la fecha y avisá **"📝 Guardado en el tablero"**. La memoria es **acumulativa y fechada**.

@@ -47,6 +47,7 @@ Al iniciar:
 4. Si **no existe**, créalo con la plantilla del final y arrancá eligiendo approach.
 5. **A medida que llega cada resultado** (un "yes" con su cita, un lote de opt-ins, una conversación), **actualizá el archivo** en la sección correspondiente, refrescá la fecha y avisalo en una línea ("📝 Guardado en el tablero"). La memoria es **acumulativa**: cada conversación, cada yes, cada opt-in se registra **con fecha**.
 6. **Espejá en Google Drive.** Cada vez que actualices `1-idea_phase/validacion-campo.md` (cada "📝 Guardado en el tablero"), reflejalo también como Google Doc nativo en la carpeta espejo `analisis de ideas/idea-NNN-<slug>/1-idea_phase/` de Drive, siguiendo el mecanismo de **`CLAUDE.md` → "Espejo en Google Drive de los tableros de `data/`"** (buscar→crear/actualizar sin duplicar, contenido inline). Incluido en el mismo guardado, no como paso aparte.
+7. **Alimentá el ICP.** La señal real de campo (a quién contactaste, quién respondió, las **citas** textuales del dolor) refina el **ICP** (perfil del comprador). Volcala a `1-idea_phase/icp.md` siguiendo el **Protocolo de ICP de `CLAUDE.md`**: leé el ICP si existe (heredá el «para quién»), **avisá y pedí confirmación antes de crear un ICP nuevo (o varios, si las conversaciones revelan compradores distintos)**, no inventes datos, y el enriquecimiento de un ICP existente va incluido en el «📝 Guardado en el tablero».
 
 ## Reglas de conducción
 

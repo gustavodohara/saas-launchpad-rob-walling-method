@@ -171,6 +171,8 @@ Genera el texto del `/saas_idea_validar_idea` **ya redactado y listo para copiar
 
 **Antes de cerrar, persistí cada idea procesada** como `data/idea-NNN-<slug>/1-idea_phase/idea.md` (ubicando o creando la carpeta de la idea según la regla de la Memoria persistente) con: problema, para quién, aproximación(es), ventaja del fundador, evidencia, banderas, veredicto y fecha. Deja en `data/perfil-fundador.md` solo un puntero corto a cada idea. Así no se pierden entre sesiones y podés retomarlas.
 
+**Sembrá el ICP.** Este comando es la **semilla del ICP** (perfil del comprador): el rol/industria y el problema (el «para quién»). Además de `idea.md`, creá o actualizá `data/idea-NNN-<slug>/1-idea_phase/icp.md` siguiendo el **Protocolo de ICP de `CLAUDE.md`** — es la **fuente única de verdad del «para quién»** que heredan los demás comandos. **Avisá y pedí confirmación antes de crear el ICP #1** (o varios, si en la conversación aparecen compradores claramente distintos), y **no inventes datos**: lo que todavía no se sepa queda `⏳ pendiente`.
+
 ---
 
 **Recordá:** una pregunta a la vez, reflejá cada respuesta, priorizá según las ventajas del fundador, y nunca aceptes una "idea" que no pueda nombrar **qué problema** resuelve y **para quién**.

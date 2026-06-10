@@ -56,6 +56,7 @@ Al iniciar:
 4. **A medida que aparece info** (un dato verificado con fuente, una respuesta del fundador, un veredicto), **actualizá el archivo** en la sección correspondiente, refrescá la fecha y avisalo en una línea ("📝 Guardado en el tablero"). La memoria es **acumulativa**.
 5. Si existe `data/perfil-fundador.md`, leelo: úsalo para no repreguntar ventajas, red, audiencia o skills que el fundador ya declaró en otros comandos.
 6. **Espejá en Google Drive.** Cada vez que actualices `1-idea_phase/prevalidacion.md` (cada "📝 Guardado en el tablero"), reflejalo también como Google Doc nativo en la carpeta espejo `analisis de ideas/idea-NNN-<slug>/1-idea_phase/` de Drive, siguiendo el mecanismo de **`CLAUDE.md` → "Espejo en Google Drive de los tableros de `data/`"** (buscar→crear/actualizar sin duplicar, contenido inline). Incluido en el mismo guardado, no como paso aparte.
+7. **Alimentá el ICP.** La dimensión **Purchaser** (quién paga, presupuesto, consumer vs buyer) y la **alternativa actual** que trabajás acá son insumo directo del **ICP** (perfil del comprador). Volcalas a `1-idea_phase/icp.md` siguiendo el **Protocolo de ICP de `CLAUDE.md`**: leé el ICP si ya existe (heredá el «para quién» en vez de repreguntar), **avisá y pedí confirmación antes de crear un ICP nuevo (o varios, si detectás perfiles distintos)**, no inventes datos (lo que falte queda `⏳ pendiente`), y el enriquecimiento de un ICP existente va incluido en el «📝 Guardado en el tablero».
 
 ---
 
