@@ -2,7 +2,7 @@
 
 Conjunto de **comandos de Claude** para encontrar, validar, construir y **lanzar** ideas de SaaS siguiendo el método de **Rob Walling** (SaaS Launchpad, "Start Small, Stay Small", TinySeed): el framework de validación **2/20/200** (≈2 horas de research + ≈20 horas de campo + ≈200 horas de MVP) y, después, la **fase de lanzamiento** (el día de lanzamiento y lo que sigue). Todo el trabajo se persiste en Markdown bajo `data/` y se espeja como Google Docs en Drive.
 
-> 🧭 **¿No sabés por dónde empezar o cuál de los 19 comandos correr?** Mirá la [**Guía de uso — ¿qué comando corro?**](GUIA-COMANDOS.md): separa los comandos **principales** (los que iniciás vos) de los **complementarios** (motores, condicionales y transversales).
+> 🧭 **¿No sabés por dónde empezar o cuál de los 20 comandos correr?** Mirá la [**Guía de uso — ¿qué comando corro?**](GUIA-COMANDOS.md): separa los comandos **principales** (los que iniciás vos) de los **complementarios** (motores, condicionales y transversales).
 
 ---
 
@@ -31,6 +31,9 @@ Conduce la **validación de campo de ~20 horas** (la "20" del framework), ya sin
 
 ### `/saas_idea_campana_landing`
 **Motor operativo del Approach 2** (landing page + tráfico): cómo debe verse y qué debe decir una buena landing de validación (H1 que nombra el problema + para quién, H2 de diferenciación, CTA de captura de email), ejemplos reales (SwipeWell, Transistor, Setup, Level, Tuple, Buffer), cuándo conviene un sales letter/manifiesto, por qué NO poner screenshots todavía, cómo leer las métricas de éxito (volumen + % de opt-in) y cómo iterar headline/canal. Trae un template de hoja de cálculo. Escribe `campana-landing.md`.
+
+### `/saas_idea_preguntas_entrevista`
+**Motor de preguntas para entrevistas**, basado en el libro ***The Mom Test*** de Rob Fitzpatrick (el "cómo preguntar" que Walling cita en SaaS Launchpad; asset en `.claude/assets/_compartido/the-mom-test-rob-fitzpatrick.md` + PDF). Le pasás un **contexto** (la idea, un problema, un supuesto riesgoso a testear, una feature a investigar o a quién entrevistás) y te devuelve un set de preguntas a medida, **abiertas, no-leading y ancladas en el pasado concreto** (nada de "¿comprarías/usarías/pagarías…?"). Aplica las **3 reglas** del Mom Test, arma tus **3 preguntas que dan miedo**, muestra para cada una la versión **mala (leading) a evitar**, agrupa por el arco de una conversación (apertura informal → ¿el problema importa? → cómo lo resuelve hoy → el porqué → dinero/quién paga → compromiso & avance/las 3 monedas → cierre), se adapta al **entrevistado** (prospecto/cliente/churneado/experto) y a la **fase** (validación, PMF, ventas), y avisa si tu riesgo es **de producto** (donde las conversaciones no validan). Es **transversal**: lo invocan `validar_20h`/`campana_llamadas` o lo corrés suelto. NO inventa respuestas (las preguntas las arma el agente; las citas las traés vos) y los aprendizajes **enriquecen el ICP**. Escribe `preguntas-entrevista.md`.
 
 ### `/saas_build_mvp_5pasos`
 Comando principal de la **Fase 200 (build)**: planifica y arranca la construcción del MVP siguiendo los **5 pasos de Rob Walling**. Su columna vertebral son **dos barreras** que impiden tirar horas: (1) un **gate anti-código** —según Rob hay 3 formas de hacer un MVP además de la landing: **human automation** (lo hacés a mano), **no-code** y, recién al final, **full code**; full code arranca *prohibido* y solo se desbloquea si se justifica que es lo más rápido / menos tiempo / más barato (ser dev y "rápido codeando" NO cuenta como justificación)—; y (2) una **barrera de alcance** que, para cada feature, pregunta *"¿esto se puede hacer a mano rápido?"* (reset de contraseña, alta de usuarios, delete, billing, reembolsos…) y deja afuera del MVP todo lo que sí. Empieza con el gate "¿MVP o lanzar la v1 directa?" + nombrar el supuesto más riesgoso, y recorre objetivo → features core → approach → timeline → ejecución, cerrando con un veredicto de **plan-readiness**. Tiene **dos reglas de oro** que lo hacen deliberadamente incómodo: **no inventa tus datos** (early-access list, métricas, stack, presupuesto: te los pide) y **no te da la razón** cuando querés construir de más — actúa como freno, no como un sí, porque toda esta fase existe para validar hipótesis de la forma más barata y rápida posible. Escribe `2-build_phase/plan-mvp.md`.
@@ -82,7 +85,8 @@ data/
     │   ├── validacion.md
     │   ├── validacion-campo.md
     │   ├── campana-llamadas.md
-    │   └── campana-landing.md
+    │   ├── campana-landing.md
+    │   └── preguntas-entrevista.md           ← banco de preguntas Mom Test a medida + bitácora de resultados
     ├── 2-build_phase/                        ← fase de construcción del MVP (las ~200h)
     │   ├── plan-mvp.md                        ← plan del MVP (5 pasos de Rob Walling)
     │   ├── mvp-codigo.md                      ← (solo si el approach es full code) tips de Derek Reimer
@@ -111,6 +115,7 @@ La estructura es **una carpeta por idea**; dentro, una subcarpeta por fase. Los 
 | `1-idea_phase/validacion-campo.md` | `/saas_idea_validar_20h` | Tablero de la validación de campo de ~20h: approach elegido, dónde está la gente, outreach, preguntas del Mom Test y resultados reales (yeses, opt-ins, citas). Consolida los dos motores operativos. |
 | `1-idea_phase/campana-llamadas.md` | `/saas_idea_campana_llamadas` | Sub-tablero del Approach 1: setup de campaña, cadencia, guiones, banco de preguntas, game tape y resultados (respuestas, % con el problema, yeses calificados, cheques de pre-venta). |
 | `1-idea_phase/campana-landing.md` | `/saas_idea_campana_landing` | Sub-tablero del Approach 2: copy (H1/H2/CTA), versiones probadas, plan de tráfico, ritual de iteración y métricas reales (visitas, opt-ins, % por canal). |
+| `1-idea_phase/preguntas-entrevista.md` | `/saas_idea_preguntas_entrevista` | Banco de preguntas Mom Test a medida (por entrevistado y fase) + las 3 preguntas que dan miedo, y bitácora de resultados (citas con símbolos, monedas puestas) que enriquecen el ICP. |
 | `2-build_phase/plan-mvp.md` | `/saas_build_mvp_5pasos` | Plan del MVP (Fase 200, build) por los 5 pasos de Rob Walling: gate "¿MVP o v1?" + supuesto más riesgoso, objetivo y métricas, features core pasadas por la barrera "¿se hace a mano rápido?", approach con el **gate anti-código** (human automation → no-code → full code), timeline y plan de ejecución, con veredicto de plan-readiness. |
 | `2-build_phase/mvp-codigo.md` | `/saas_build_mvp_tips_dev` | Tablero de la Fase 200 (build) para el approach **full code**, basado en la entrevista de Derek Reimer (SavvyCal / ex-Drip): gate de entrada "¿toca código?", el core/salsa secreta + lista negra de procrastinación, lo que NO se construye (se hace a mano) + la must-have "login-as-user", calidad/tests, pulido (usabilidad vs estética), stack ("usá lo que ya sabés"), chequeo anti-sobre-construcción (Drip vs Level) y lanzamiento por fases, con veredicto de code-readiness. Solo se crea si el approach es full code. |
 | `2-build_phase/premarketing.md` | `/saas_build_marketing_antes_de_codear` | Tablero del encuadre "empezá a marketear antes de codificar" (puente Fase 20→200, lección de Rob Walling): setup (momento, vende/hobby, timeline del MVP, si ya pre-marketea, objeción real), la objeción trabajada (me roban la idea / muy ocupado codificando) con su desmonte + el "problema en 1 frase" que puede contar sin revelar la idea, los 3 beneficios + bonus conectados a su caso, y el compromiso concreto (primer paso + fecha) con veredicto de marketing-readiness. Hace handoff a `lista-lanzamiento.md`. |
@@ -154,6 +159,7 @@ El **tablero maestro `/saas_idea_validar_2_20_200`** orquesta las fases 2 y 20 p
                        └─ (motion de ventas high-touch) → /saas_launch_ventas_fundador → ventas-fundador.md   (founder-led sales — las 14 reglas de Craig Hewitt)
 
    ┌─ (TRANSVERSAL — invocable desde cualquier etapa)
+   ├─ /saas_idea_preguntas_entrevista → preguntas-entrevista.md   (set de preguntas Mom Test a medida antes de entrevistar — validación · PMF · ventas)
    ├─ /saas_idea_icp                → icp.md            (ver/corregir el perfil del comprador; se enriquece SOLO desde toda la cadena)
    └─ /saas_launch_cuando_abandonar → cuando-abandonar.md   (¿tirar la toalla? — sunk cost · 6 signals · proceso de decisión · NO decide por vos)
 ```

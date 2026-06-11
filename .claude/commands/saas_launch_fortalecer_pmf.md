@@ -110,7 +110,7 @@ El entendimiento profundo de tu mercado y cliente ideal es un **moat**. La forma
 - **Prospectos** (no compraron pero son ICP) · **clientes** actuales · gente que **probó y no compró** · gente que **churneó**.
 
 ### Las preguntas — abiertas, NO leading (el agente las redacta)
-Estilo Mom Test / **Deploy Empathy** (Michelle Hansen). Ejemplos:
+Estilo Mom Test (método citable en `.claude/assets/_compartido/the-mom-test-rob-fitzpatrick.md`, PDF al lado — recordá: **anclar en el pasado concreto**, no en hipotéticos; y los **feature requests se entienden, no se obedecen** → cavar la motivación) / **Deploy Empathy** (Michelle Hansen). Ejemplos:
 - *¿Me caminás por un workflow de ejemplo de lo que intentás lograr?*
 - *¿Qué problema estás tratando de resolver con esto? ¿Qué usás hoy? ¿Qué usabas antes?*
 - *¿Cuáles son tus mayores frustraciones con esta solución?*

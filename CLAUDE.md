@@ -53,6 +53,14 @@ La estructura es **una carpeta por idea** y, dentro, las carpetas de fase — es
 | &nbsp;&nbsp;↳ `1-idea_phase/` | `…/1-idea_phase` | `1RnWiHwyJaJpMhr9jS9QNRGVedM-dc3zL` |
 | &nbsp;&nbsp;↳ `2-build_phase/` | `…/2-build_phase` | `1MWj2yJ_LYmpXxDsI_Fsd9_7-2CQ77ATH` |
 | &nbsp;&nbsp;↳ `3-launch_phase/` | `…/3-launch_phase` | `1gE8GOVpJGALMNYPlAx1cEiclud7XhhYd` |
+| `data/idea-003-calendario-tipo-calendly/` | `analisis de ideas/idea-003-calendario-tipo-calendly` | `1zNIwRhtLAC0Aa8hcorwcbaL3OYB9IP8Z` |
+| &nbsp;&nbsp;↳ `1-idea_phase/` | `…/1-idea_phase` | `1qfjZ5PeqYWubNIT4Co3C8g6xcOxg6IqU` |
+| &nbsp;&nbsp;↳ `2-build_phase/` | `…/2-build_phase` | `1woYSkoXJskT5fGIKFKU0qCxp3Zyml1cF` |
+| &nbsp;&nbsp;↳ `3-launch_phase/` | `…/3-launch_phase` | `1c2-f168k4eNCWFhShrGLzoAi0MKFB9H7` |
+| `data/idea-004-datos-confiables-negocio-chico/` | `analisis de ideas/idea-004-datos-confiables-negocio-chico` | `1ydK5u8mGaiZEMDZyD-d2vi_QLFOCMvh6` |
+| &nbsp;&nbsp;↳ `1-idea_phase/` | `…/1-idea_phase` | `1RWz2vG-7O-40PSKAiGG9yfm-ru6P-3MM` |
+| &nbsp;&nbsp;↳ `2-build_phase/` | `…/2-build_phase` | `1xefRO2OMvYuZ07WFssOS3A8gQ2JE63Cv` |
+| &nbsp;&nbsp;↳ `3-launch_phase/` | `…/3-launch_phase` | `1zdoGXvLeJAsXIfl9WihrXFmGWhGnPfYp` |
 
 El archivo **compartido** `data/perfil-fundador.md` (no pertenece a ninguna idea) se espeja en la **raíz** de `analisis de ideas` (ID `1OL-GWgEu_7CirAvHtjhyg0yVkKp3Edig`) como Doc `perfil-fundador` (ID `1ikMKjSuxzVfcuBoBDMMgthsjXf03raCGHM0vl4sN2ms`).
 
@@ -64,7 +72,7 @@ Cada vez que guardes/actualices un archivo en `data/` (los momentos en que avis�
 
 ### Cómo espejar (sin duplicar)
 
-El nombre del Doc = el nombre del archivo local **sin la extensión `.md`** (ej. `idea`, `icp`, `prevalidacion`, `validacion`, `validacion-campo` en `1-idea_phase/`; `plan-mvp`, `evaluacion-ia`, `mvp-codigo`, `premarketing`, `lista-lanzamiento` y `pricing` en `2-build_phase/`; `plan-lanzamiento`, `fortalecer-pmf`, `ventas-fundador` y `cuando-abandonar` en `3-launch_phase/`). La idea queda identificada por la **carpeta** (`idea-NNN-<slug>/<fase>/`), no por el nombre del archivo; por eso el Doc dedup se busca **scopeado a la carpeta de fase de esa idea** (ojo: `plan-mvp`, `evaluacion-ia`, `mvp-codigo`, `premarketing`, `lista-lanzamiento` y `pricing` se espejan en la carpeta espejo `2-build_phase/`, no en `1-idea_phase/`; y `plan-lanzamiento`, `fortalecer-pmf`, `ventas-fundador` y `cuando-abandonar` se espejan en `3-launch_phase/`). Eso garantiza que las actualizaciones reencuentren el Doc existente y no creen copias.
+El nombre del Doc = el nombre del archivo local **sin la extensión `.md`** (ej. `idea`, `icp`, `prevalidacion`, `validacion`, `validacion-campo`, `preguntas-entrevista` en `1-idea_phase/`; `plan-mvp`, `evaluacion-ia`, `mvp-codigo`, `premarketing`, `lista-lanzamiento` y `pricing` en `2-build_phase/`; `plan-lanzamiento`, `fortalecer-pmf`, `ventas-fundador` y `cuando-abandonar` en `3-launch_phase/`). La idea queda identificada por la **carpeta** (`idea-NNN-<slug>/<fase>/`), no por el nombre del archivo; por eso el Doc dedup se busca **scopeado a la carpeta de fase de esa idea** (ojo: `plan-mvp`, `evaluacion-ia`, `mvp-codigo`, `premarketing`, `lista-lanzamiento` y `pricing` se espejan en la carpeta espejo `2-build_phase/`, no en `1-idea_phase/`; y `plan-lanzamiento`, `fortalecer-pmf`, `ventas-fundador` y `cuando-abandonar` se espejan en `3-launch_phase/`). Eso garantiza que las actualizaciones reencuentren el Doc existente y no creen copias.
 
 1. **Buscá si ya existe** el Doc en la carpeta de fase **de esa idea**:
    `search_drive_files(query="name = '<nombre-sin-md>' and '<ID-carpeta-fase-de-la-idea>' in parents and trashed = false")`
@@ -125,6 +133,7 @@ Antes de tocar `icp.md`, el comando avisa y, según el caso, **pide confirmació
 | Comando | Qué dato del comprador aporta al ICP |
 |---|---|
 | `/saas_idea_encontrar_idea` | **Siembra**: rol/industria y problema (el "para quién" inicial). |
+| `/saas_idea_preguntas_entrevista` | Citas del dolor (en sus palabras), alternativa actual, quién paga / dónde se junta y disposición a pagar que revelan las entrevistas (transversal: validación, PMF, ventas). |
 | `/saas_idea_prevalidar_2h` | **Purchaser** (quién paga, presupuesto), consumer vs buyer, alternativa actual. |
 | `/saas_idea_validar_20h` | Señal real de campo: a quién contactó, quién respondió, citas. |
 | `/saas_idea_campana_llamadas` | Citas del dolor, yeses calificados, pre-ventas (disposición a pagar). |
